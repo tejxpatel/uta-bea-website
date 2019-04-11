@@ -43,8 +43,38 @@ $error_list = array(
 <html lang="en">
 <head>
 	<title>Login Page</title>
+	<?php require_once 'css/css.php'; ?>
 	<style type="text/css">
 		body { background-color:#<?php echo $bg ?>; }
+		body {
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+			-ms-flex-align: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			justify-content: center;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		.auth_form {
+			width: 100%;
+			max-width: 330px;
+			padding: 15px;
+			margin: 0 auto;
+		}
+		.auth_form .form-control {
+			position: relative;
+			box-sizing: border-box;
+			height: auto;
+			padding: 10px;
+			font-size: 16px;
+		}
+		.auth_form .form-control:focus {
+			z-index: 2;
+		}
 	</style>
 </head>
 <body>
