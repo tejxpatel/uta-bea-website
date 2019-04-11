@@ -1,0 +1,45 @@
+/*@import url('https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display');*/
+/*
+ * Globals
+ */
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+.bg-fade {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+.border-primary {
+  border-color: #FFF200;
+}
+.btn-primary {
+  background-color: #FFF200;
+  border-color: #FFF200;
+  color: #000000;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #FFF250;
+  border-color: #FFF250;
+  color: #000011;
+}
+.btn-success {
+  background-color: #00A651;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+
+}
+
