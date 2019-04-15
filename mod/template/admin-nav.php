@@ -2,7 +2,7 @@
 //require_once '../core/req_auth.php';
 ?>
 <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-primary shadow-none">
-	<a class="navbar-brand pl-0 ml-0" href="../login.php" id="level5">Level5</a>
+	<a class="navbar-brand pl-0 ml-0" href="login.php" id="BEA">BEA</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -13,7 +13,7 @@
 					if (file_exists('../../img/user/'.$_SESSION['first_name'].'_'.str_replace(' ','_',$_SESSION['last_name']).'.jpg')) {
 						echo '<img src="../../img/user/',$_SESSION['first_name'],'_',str_replace(' ','_',$_SESSION['last_name']),'.jpg" width="30" height="30" alt="',$_SESSION['first_name'],' ',$_SESSION['last_name'],'" class="rounded-circle border">';
 					} else {
-						echo '<img src="../../img/user/user.jpg" width="30" height="30" alt="User" class="rounded-circle border">';
+						echo '<img src="img/user/user.jpg" width="30" height="30" alt="User" class="rounded-circle border">';
 					}
 				?></a>
 				<div class="dropdown-menu dropdown-menu-right">
