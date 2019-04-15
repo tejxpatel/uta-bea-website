@@ -3,99 +3,171 @@
 
 <head>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" src="css/style.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="utf-8">
+<title>BEA UTA Homepage</title>
+<link rel="stylesheet" type="text/css" href="css/home.css"/>
+<script src="javascript/jquery-2.2.3.min.js"></script>
+<script src="javascript/jquery.cycle2.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="javascript/main.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="img/home-page/18446931_217171768798887_7988745256987778538_n.png"/>
+<meta name="viewport" content="width=device-width initial-scale=1.0"/>
 
 </head>
 
 <body>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4"> UTA Broadcast Education Association</h1>
-    <p class="lead">Welcome to our website!</p>
-  </div>
-</div>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a classs="dropdown-item" href="#">Something else here</a>
+<!-- ==================== HEADER LOGO, LOGIN ==================== -->
+<div class="make_fixed">
+<header class="above_nav">
+        <div class="header_img"><a href="index.html"><img src="img/home-page/18446931_217171768798887_7988745256987778538_n.png" width="175" /></a>
         </div>
-      </li>
+        <h1 class="header_title">Broadcast Educators Association <br>
+          UTA Chapter</h1>
+        <div class="user">
+            <a href="#" class="login_user">Login</a> | <a href="#" class="reg_user">Register</a>
+        </div>
 
-    </ul>
+        <div class="clear_float"></div>
+</header>
 
+<!-- ==================== NAVIGATION ==================== -->
+	<div class="menu_bar">
+    	<a href="#" class="btn_menu"><span class="h_icon">☰</span>Broadcast Educators Association<br>UTA Chapter</a>
   </div>
-</nav>
-
-
-<h1>
-    Who Are We?
-</h1>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-     <h3>Broadcast<h3>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-    <div class="col-sm">
-    <h3>Broadcast<h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-    <div class="col-sm">
-    <h3>Broadcast<h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-  </div>
+	<nav>
+		<ul>
+        	
+			<li><a href="index.html" class="nav_item">Home</a></li>
+            
+            <li class="submenu" id="account"><a href="#" class="nav_item">Account<span class="arrow"><img src="img/home-page/arrow_down.png" alt="" /></span></a>
+				<ul class="children">
+                	<li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>       
+            </li>
+        
+			<li class="submenu"><a href="#" class="nav_item">Officers<span class="arrow"><img src="img/home-page/arrow_down.png" alt=""/></span></a>
+                <ul class="children">
+                    <li><a href="#">Officer Information</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li class="submenu"><a href="#" class="nav_item">Calendar<span class="arrow"><img src="img/home-page/arrow_down.png" alt=""/></span></a>
+                <ul class="children">
+                    <li><a href="#">Upcoming Events</a></li>
+                   
+                </ul>
+            </li>
+            
+			
+            	
+			 <li class="submenu"><a href="#" class="nav_item">Meetings<span class="arrow"><img src="img/home-page/arrow_down.png" alt=""/></span></a>
+                <ul class="children">
+                    <li><a href="#">Upcoming Meetings</a></li>
+                   
+                </ul>
+            </li>
+            
+            
+		</ul>
+	</nav>	
+    <div class="clear_float"></div>
 </div>
+<!-- ==================== HEADER CAROUSEL ==================== -->
+   <header class="below_nav">
+	<div class="cycle-slideshow">
+   	  <span class="cycle-prev">&#9001;</span>
+        <span class="cycle-next">&#9002;</span>
+        
+        <span class="cycle-pager"></span>
+
+        
+    	<img src="img/home-page/44723328_520830425099685_2160078381897482240_o.jpg" alt="" class="img_slider"/>
+        <img src="img/home-page/43629425_520827151766679_4331755189833826304_o.jpg" alt="" class="img_slider"/>
+        <img src="img/home-page/44829011_520750785107649_5143677057305149440_o.jpg" alt="" class="img_slider"/>
+        <img src="img/home-page/22498896_305370326645697_8585621220051221335_o.jpg" alt="" class="img_slider"/>
+        <img src="img/home-page/27908110_355010398348356_9144338270305586096_o.jpg" alt="" class="img_slider"/>
+    </div>
+</header>
+
+<!-- ==================== SECTION ==================== -->
+
+<section>
+
+<!-- ==================== MAIN CONTENT ==================== -->
 
 
+	<article>
+	  <h2 class="intro_title">Become a member of the BEA </h2>
+	  <p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, officia numquam deserunt non cumque aperiam placeat doloremque harum. Fuga, incidunt, distinctio earum impedit quisquam iste molestias enim maxime consequatur pariatur iusto reiciendis ab voluptates vitae reprehenderit ad sapiente ut quasi ex ea tempore omnis hic expedita aliquid aspernatur officiis voluptate blanditiis rem accusamus minima. Tenetur, deleniti tempore a veritatis odio obcaecati dolore nulla accusantium vel quaerat. Porro, accusamus, dolorum, eveniet, excepturi veniam molestias ullam expedita distinctio enim aliquid temporibus necessitatibus fugit quidem ab error voluptatum laudantium laboriosam odio fugiat ducimus laborum repellat numquam non. Aperiam ab dolor minus nulla unde!
+            </p>
+	  <h2 class="intro_title">Text Headline</h2>
+	  <p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, officia numquam deserunt non cumque aperiam plae omnis hic expedita aliquid aspernatur officiis voluptate blanditiis rem accusamus minima. Tenetur, deleniti tempore a veritatis odio obcaecati dolore nulla accusantium vel quaerat. Porro, accusamus, dolorum, eveniet, excepturi veniam molestias ullam expedita distinctio enim aliquid temporibus necessitatibus fugit quidem ab error voluptatum laudantium laboriosam odio fugiat ducimus laborum repellat numquam non. Aperiam ab dolor minus nulla unde!
+            </p>
+	  <h2 class="intro_title">Text Headline</h2>
+	  <img src="img/home-page/18422432_217182558797808_3112332205953372463_o.jpg" alt="" class="featured_image"/><p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, officia numquam deserunt non cumque aperiam placeat doloremque harum. Fuga, incidunt, distinctio earum impedit quisquam iste molestias enim maxime consequatur pariatur iusto reiciendis ab voluptates vitae reprehenderit ad sapiente ut quasi ex ea tempore omnis hic expedita aliquid aspernatur officiis voluptate blanditiis rem accusamus minima. Tenetur, deleniti tempore a veritatis odio obcaecati dolore nulla accusantium vel quaerat. Porro, accusamus, dolorum, eveniet, excepturi veniam molestias ullam expedita distinctio enim aliquid temporibus necessitatibus fugit quidem ab error voluptatum laudantium laboriosam odio fugiat ducimus laborum repellat numquam non. Aperiam ab dolor minus nulla unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, id.
+            </p>
+	</article>
 
-<h1>
-    What Do We Do?
-</h1>s
+<!-- ==================== ASIDE INFORMATION ==================== -->
 
+    <aside>
+        <h2 class="aside_title">Upcoming Events</h2>
+        <h3 class="aside_events">Event 1</h3>
+        <p class="aside_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dicta in aliquam nam minima magnam tenetur. Deleniti, voluptatem soluta nemo! Nam qui ullam possimus porro expedita explicabo dolor corporis! Molestias, nam minus sed nostrum reprehenderit in porro. Minima, repellat, fugiat, unde cupiditate amet suscipit facilis similique ipsum harum voluptate ratione.</p>
+        <h3 class="aside_events">Event 2</h3>
+        <p class="aside_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dicta in aliquam nam minima magnam tenetur. Deleniti, voluptatem soluta nemo! Nam qui ullam possimus porro expedita explicabo dolor corporis! Molestias, nam minus sed nostrum reprehenderit in porro. Minima, repellat, fugia ipit facilis similique ipsum harum voluptate ratione.</p>
+        <h3 class="aside_events" data_temp_dwid="1">Event 3</h3>
+        <p class="aside_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dicta in aliquam nam minima magnam tenetur. Delenedita explicabo dolor corporis! Molestias, nam minus sed nostrum reprehenderit in porro. Minima, repellat, fugiat, unde cupiditate amet suscipit facilis similique ipsum harum voluptate ratione.</p>
+                
+      <p class="aside_text">Visit our <a href="#">events page</a> for more information on upcoming events or catch up on past events.</p>
+    
+    </aside>
+    <div class="clear_float"></div>
+</section>
 
-
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4"> Footer</h1>
-    <p class="lead">Footer</p>
-  </div>
-</div>
-
-
-
+<!-- ==================== FOOTER ==================== -->
 <footer>
-
+	<div class="clear_float"></div>
+	<div class="footer_wrapper">
+    	<div class="footer_links">
+            <h4>Quick Links</h4>
+                <ul class="quick_links">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="#">Officers</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Meetings</a></li>
+                    
+                </ul>
+        </div> 
+        
+        <div class="footer_media"> 
+       	  <h4>Follow Us</h4>
+            	<a href="https://www.facebook.com/mavsbea/" target="_blank">
+                	<img src="img/home-page/facebook.png" alt="" width="100" class="social_media" />
+                </a>
+        </div> 
+        
+        <div class="footer_donate"> 
+        	<h4>Join BEA</h4>
+       	  <p class="donate_info">Join The Organization<br> Your Career in
+                						Broadcasting<br> will benefit greatly<br>
+          </p>
+                <a href="#"><input type="submit" value="Join Today" class="footer_submit"></a>
+        </div>
+        
+        <div class="clear_float"></div>
+        
+        <div class="footer_text">
+          <p class="copy_info">Created by Clinton Ploetz &copy; 2018.
+            All information presented is meant for class purposes only.
+            </p> 
+        </div>   
+    </div>
 </footer>
-
-
 </body>
 </html>
