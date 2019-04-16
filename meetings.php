@@ -7,8 +7,7 @@
 <title>Meetings</title>
 
 
-<?php include("php-include/head.php"); ?>
-
+<?php require_once "css/css.php"; ?>
 
 
 </head>
@@ -20,7 +19,7 @@
 
 <!-- ==================== TOP HEADER + NAVIGATION BAR ==================== -->
 
-<?php include("php-include/header.php"); ?>
+<?php require_once "php-include/header.php"; ?>
 
 
 <!-- ==================== HERO HEADER ==================== -->
@@ -39,38 +38,34 @@
 
 <div class="container meeting-agenda"> 
 
+<h1>General Monthly Meeting</h1>
+
+<h2>Wednesday at 12:00PM-1:00PM</h2>
+
+<br>
+<h1>SBEA Monthly Meeting </h1>
+
+<h2>Time and Date: Wednesday Febuary 13 at 12:00PM</h2>
 
 
 
-<h1>MEETING AGENDAS</h1>
+<p>This will be our first meeting for the spring semester . We welcome everyone to attend. We will be discussing future plans and meeting the board of directors.
+</p>
 
-<h2>Tuesday, April 16th</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore magna aliqua. </p>
-
-<p>Ut enim ad minim veniam, quis nostrud exercitation 
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Ut enim ad minim veniam, quis nostrud exercitation 
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
 <br><br>
+<h1>SBEA Monthly Meeting </h1>
 
-<h2>Tuesday, April 9th</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore magna aliqua. </p>
+<h2>Time and Date: Wednesday March 13 at 12:00PM</h2>
 
-<p>Ut enim ad minim veniam, quis nostrud exercitation 
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
-<p>Ut enim ad minim veniam, quis nostrud exercitation 
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+ <p>This will be our second meeting for the spring semester. We will discuss this semester activities and future projects.we will introduce officers to new members and discuss networking opportunities. We welcome everyone to attend. 
+</p>
+
+
 
 
 
@@ -83,8 +78,12 @@ in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
 <!-- ==================== FOOTER ==================== -->
 
-<?php include("php-include/footer.php"); ?>
+<?php 
 
+require_once "php-include/footer.php";
+require_once "js/js.php";
+
+ ?>
 
 
 </body>

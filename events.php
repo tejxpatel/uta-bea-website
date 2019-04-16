@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<?php
+$eventsContents = file_get_contents('./mod/mock-events.json');
+$events = json_decode($eventsContents);
+
+
+?><!DOCTYPE html>
 <html>
-
-
-
 <!-- ==================== HEAD ==================== -->
 <head>
 
 <meta charset="utf-8">
 <title>Events</title>
 
-<?php include("php-include/head.php"); ?>
+<?php require_once "css/css.php"; ?>
 
 </head>
 
@@ -24,7 +26,7 @@
 
 <!-- ==================== TOP HEADER + NAVIGATION BAR ==================== -->
 
-<?php include("php-include/header.php"); ?>
+<?php require_once "php-include/header.php"; ?>
 
 
 
@@ -45,15 +47,19 @@
 
 <div class="container event"> 
 
+<?php foreach($events->events as $event){?>
 
-<div class="blog-post">
-            <h2 class="blog-post-title">EVENT TITLE</h2>
-            <p class="blog-post-meta">December 23, 2013</p>
+	<div class="blog-post">
+        <h2 class="blog-post-title"><?php echo strtoupper($event->title); ?></h2>
+        <p class="blog-post-meta"><strong>Date: </strong><?php echo strtoupper($event->date); ?>, <small><?php echo strtoupper($event->time); ?></small></p>
+        <p class="blog-post-meta"><strong>Location: </strong><?php echo strtoupper($event->location); ?></p>
+        <p><?php echo strtoupper($event->description); ?></p>
+	</div>
 
-            <p>Event Description...nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+<?php } ?>
+
+
 </div>
-
-            </div>
 
 <!-- =========== PARALLAX SECTION =============== -->
 
@@ -65,11 +71,13 @@
 
 <!-- ==================== FOOTER ==================== -->
 
-<?php include("php-include/footer.php"); ?>
+<?php 
 
+require_once "php-include/footer.php";
 
+require_once "js/js.php";
 
-
+?>
 
 </body>
 
