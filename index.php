@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+require_once './mod/core/connect-to-db.php';
+
+$q = 'SELECT * FROM `ondzeuta_bea`.`event`';
+$db = pdoConnect();
+try {
+  $db->query($q);
+}catch (Exception $e) {
+  var_dump($e);
+}
+?><!DOCTYPE html>
 <html>
 
 <head>
