@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <title>BEA UTA Home</title>
 
-<?php include("php-include/head.php"); ?>
+<?php require_once "php-include/head.php"; ?>
 
 </head>
 
@@ -18,7 +18,7 @@
 
 <!-- ==================== TOP HEADER + NAVIGATION BAR ==================== -->
 
-<?php include("php-include/header.php"); ?>
+<?php require_once "php-include/header.php"; ?>
 
 
 
