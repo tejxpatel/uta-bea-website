@@ -99,7 +99,7 @@
 <!-- ==================== HEADER CAROUSEL ==================== -->
 
 
-<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="/img/home-page/home-header.jpg">
+<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="img/home-page/home-header.jpg">
 
 <h1 class="parallax-text">Welcome to the UTA Chapter of the Broadcast Education Association!</h1>
 
