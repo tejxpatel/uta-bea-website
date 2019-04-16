@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <title>BEA UTA Home</title>
 
-<?php require_once "php-include/head.php"; ?>
+<?php require_once "css/css.php"; ?>
 
 </head>
 
@@ -26,7 +26,7 @@
 <!-- ==================== HERO HEADER ==================== -->
 
 
-<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="/img/home-page/home-header.jpg">
+<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="img/home-page/home-header.jpg">
 
 <h1 class="parallax-text">Welcome to the UTA Chapter of the Broadcast Education Association!</h1>
 
@@ -154,11 +154,12 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <!-- ==================== FOOTER ==================== -->
 
-<?php include("php-include/footer.php"); ?>
+<?php 
 
+require_once "php-include/footer.php";
+require_once "js/js.php";
 
-
-
+ ?>
 
 </body>
 
