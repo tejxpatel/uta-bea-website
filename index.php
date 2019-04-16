@@ -50,35 +50,38 @@
 
   
     <div class="col-sm center-text">
-    <i class="fas fa-info-circle"></i>
-      <h3>Students</h3>
+    <i class="fas fa-flag"></i>
+
+      <h3>Mission</h3>
       <p>
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-      ut labore et dolore magna aliqua.
+      The UTA Chapter of the Broadcast Education Association goal is to provide UTA students that are majoring in broadcasting with information on industry knowledge, intern opportunities, events, and social networking.
 
       </p>
     </div>
     <div class="col-sm center-text">
 
-    <i class="fas fa-info-circle"></i>
-    <h3>Storytellers</h3>
+   <i class="fas fa-video"></i> 
+
+    <h3>Members</h3>
 
     <p>
+    We offer excellent leadership and  wonderful opportunities for students interested in a career in broadcasting. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore magna aliqua.
+
+
 
 </p>
     </div>
     <div class="col-sm center-text">
-    <i class="fas fa-info-circle"></i>
-    <h3>Storytellers</h3>
+    <i class="fas fa-users"></i>
+
+    <h3>Get Involved</h3>
 
     <p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+   MAVS BEA Chapter is open to all students. The Broadcasting Education Association is a nationwide organization and the cost to join is  $10 annually.
+
 
 </p>
 
@@ -104,13 +107,7 @@ ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
     <div class="col">
       <h2>WHAT WE DO</h2>
       <p>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals. The association’s publications, annual convention, web-based programs, and regional district activities provide opportunities for juried production competition and presentation of current scholarly research related to aspects of the electronic media. These areas include media audiences, economics, law and policy, regulation, news, management, aesthetics, social effects, history, and criticism, among others.BEA is concerned with electronic media curricula, placing an emphasis on interactions among the purposes, developments, and practices of the industry and imparting this information to future professionals.  BEA serves as a forum for exposition, analysis and debate of issues of social importance to develop members’ awareness and sensitivity to these issues and to their ramifications, which will ultimately help students develop as more thoughtful practitioners.
 </p>
 
 
