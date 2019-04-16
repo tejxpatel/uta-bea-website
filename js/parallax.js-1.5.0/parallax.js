@@ -94,7 +94,7 @@
       if (this.imageSrc && this.iosFix && !this.$element.is('img')) {
         this.$element.css({
           backgroundImage: 'url(' + this.imageSrc + ')',
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: this.position
         });
       }
