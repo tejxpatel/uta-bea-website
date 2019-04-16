@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <title>Officers</title>
 
-<?php include("php-include/head.php"); ?>
+<?php require_once "css/css.php"; ?>
 
 </head>
 
@@ -24,7 +24,7 @@
 
 <!-- ==================== TOP HEADER + NAVIGATION BAR ==================== -->
 
-<?php include("php-include/header.php"); ?>
+<?php require_once "php-include/header.php"; ?>
 
 
 
@@ -154,7 +154,12 @@
 
 <!-- ==================== FOOTER ==================== -->
 
-<?php include("php-include/footer.php"); ?>
+<?php 
+
+require_once "php-include/footer.php";
+require_once "js/js.php";
+
+ ?>
 
 
 
