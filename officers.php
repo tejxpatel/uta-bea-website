@@ -47,7 +47,7 @@
 <div class="officers">
 
 
-<h1> STAFF ADVISERS</h1>
+<h1> Staff & President</h1>
 <br><br><br><br>
 <div class="container-fluid">
   <div class="row">
@@ -56,8 +56,8 @@
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
+          <h5 class="card-title mb-0">LaDonna Aiken</h5>
+          <div class="card-text text-black-50">Staff</div>
         </div>
       </div>
     </div>
@@ -66,8 +66,9 @@
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
+          <h5 class="card-title mb-0">Creighton Branch
+</h5>
+          <div class="card-text text-black-50">President</div>
         </div>
       </div>
     </div>
@@ -97,8 +98,8 @@
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
+          <h5 class="card-title mb-0">Edward  Cardenas</h5>
+          <div class="card-text text-black-50">Vice President</div>
         </div>
       </div>
     </div>
@@ -107,28 +108,19 @@
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
+          <h5 class="card-title mb-0">Kimmie Darling</h5>
+          <div class="card-text text-black-50">Secretary</div>
         </div>
       </div>
     </div>
+   
     <!-- Team Member 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
-        </div>
-      </div>
-    </div>
-    <!-- Team Member 4 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
+          <h5 class="card-title mb-0">Joe Scanlan</h5>
+          <div class="card-text text-black-50">Treasurer</div>
         </div>
       </div>
     </div>
