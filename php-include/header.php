@@ -1,19 +1,14 @@
 <!-- ====================  HEADER  ==================== -->
 <div class="container"> 
 
-<div class="row justify-content-center">
-  <div class="col">
-  <div class="header_img"><a href="index.html"><img src="img/bea/BEA-Logo.png" width="125" /></a>
-      </div>
-  </div>
-  <div class="col-7">
-  <h1 class="center-text header-title" style="padding-top:30px;">Broadcast Education Association </h1>
-        <h1 class="center-text header-title">UTA Chapter</h1>
-  </div>
-  <div class="col">
 
-  </div>
-</div>
+
+  <div class="img-fluid text-center" style="background-color: white;"><a href="index.html"><img src="img/bea/bea-header-logo.jpg" width="25%" /></a>
+      </div>
+
+
+
+
 
 </div>
 
