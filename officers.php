@@ -44,7 +44,7 @@
 <!-- ====================================================== -->
 
 
-<div class="officers">
+<div class="container page-padding">
 
 
 <h1> Staff & President</h1>
