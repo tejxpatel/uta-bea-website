@@ -45,7 +45,7 @@ $events = json_decode($eventsContents);
 <!-- ==================== MAIN CONTENT ==================== -->
 <!-- ====================================================== -->
 
-<div class="container event"> 
+<div class="container page-padding"> 
 
 <?php foreach($events->events as $event){?>
 

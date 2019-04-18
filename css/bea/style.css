@@ -4,7 +4,6 @@
 /* ======================================== ######################################## */
 
 
-
 /* =============== FONTS  =============== ################ FONTS ############## */
 
 /*
@@ -48,48 +47,9 @@ h1, h2, h3, h4, h5 {
 
 /* ########## HEADER ABOVE NAV ########## */
 
-header {
-	width:80%;
-	margin:0 auto;	
-}
-
-
-.header_img {
-	
-	float:left;
-	text-align:left;	
-}
-
-
-.header-title {
-
-    color:#f58025;
-
-}
-
-
-.login-register {
-    margin: auto;
-    padding-top: 20%;
-}
-
-
-
-
 
 /* ########## NAVIGATION ########## */
 
-.active {
-    color: #f58025;
-}
-
-.nav-link {
-    font-size: 1.5em;
-}
-
-ul.nav a:hover { color: #f58025 !important; }
-
-ul.nav a { color: #fff; }
 
 
 /* ########## FOOTER   ########## */
@@ -100,15 +60,33 @@ footer {
 }
 
 
+/* ########## PAGES ########## */
+
+.page-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ########## OFFICERS PAGE ########## */
+
+.officers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ########## EVENTS PAGE ########## */
+
+.event {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
 
 
-/* ########## HOMEPAGE   ########## */
-
-
-
+/* ########## HOMEPAGE ########## */
 
 .parallax-container {
-    height: 300px;
+    height: 450px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,27 +103,12 @@ footer {
 
 
   .sub-page {
-   
     font-size: 5em; 
-    
-
   }
 
 
-.home-section {
 
-padding-top: 50px;
-    padding-bottom: 50px;
-    height: 100%;
-  }
-
-
-.home-header{
-font-size: 2em;
-color: white;
-  }
-
-  .who-we-are i {
+.who-we-are i {
       font-size: 3em;
       color: #00447c;
   }
@@ -153,50 +116,27 @@ color: white;
 
 /* ########## MEETINGS PAGE   ########## */
 
-  .meetings-header{
+.meetings-header{
     font-size: 5em;
     color: white;
     
       }
 
 
-      .meeting-agenda {
+.meeting-agenda {
 padding-top: 100px;
 padding-bottom: 100px;
       }
 
 
-      /* ########## OFFICERS PAGE   ########## */
 
 
-
-    .officers {
-
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-
- /* ########## EVENTS PAGE   ########## */
-
-    .event {
-      padding-top: 100px;
-      padding-bottom: 100px;
-      
-    }
-
-    /*@import url('https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display');*/
-/*
- * Globals
- */
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
+
 .bg-fade {
   background-color: rgba(0,0,0,0.8);
 }
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,

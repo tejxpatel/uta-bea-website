@@ -1,8 +1,8 @@
 <footer class="container-fluid py-5">
       <div class="row">
-        <div class="col-12 col-md">
+        <div class="col-6 col-md">
           <img src="img/bea/BEA-Logo-white.png" width="100" height="100" viewBox="0 0 100 100">
-          <small class="d-block mb-3 text-muted">&copy; 2019</small>
+          <small class="d-block mb-3">&copy; 2019</small>
         </div>
         <div class="col-6 col-md">
           <h5>Quick Links</h5>
