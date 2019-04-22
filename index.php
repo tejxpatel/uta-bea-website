@@ -5,6 +5,7 @@ $q = 'SELECT * FROM `ondzeuta_bea`.`event`';
 $db = pdoConnect();
 try {
   $db->query($q);
+  //echo password_hash('1234567', PASSWORD_DEFAULT);
 }catch (Exception $e) {
   var_dump($e);
 }

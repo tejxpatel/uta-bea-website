@@ -23,7 +23,7 @@
         <div class="col-6 col-md">
           <h5>Admin</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-white" href="#">Login</a></li>
+            <li><a class="text-white" href="login.php">Login</a></li>
             <li><a class="text-white" href="#">Register</a></li>
           </ul>
         </div>

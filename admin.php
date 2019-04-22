@@ -1,4 +1,5 @@
 <?php
+require_once 'mod/core/req_auth.php';
 //$animate_css = 1;
 ?><!doctype html>
 <html lang="en">

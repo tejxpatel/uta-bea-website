@@ -1,6 +1,4 @@
 <?php
-// global directory where client stuff goes
-$folder_key = 'SkTnfebsPbR79KtDpiteradXGhfQWoo';
 
 if (isset($no_auth_required) && $no_auth_required == 1) {
 	# INI_SETs
@@ -61,7 +59,7 @@ if (isset($no_auth_required) && $no_auth_required == 1) {
 
 	} else {
 		# Not logged in
-		header('Location: ../../l5/login.php?e=login_required&r=' . str_replace('&', '@', $_SERVER['REQUEST_URI']));
+		header('Location: login.php?e=login_required&r=' . str_replace('&', '@', $_SERVER['REQUEST_URI']));
 		exit;
 	}
 
@@ -69,14 +67,7 @@ if (isset($no_auth_required) && $no_auth_required == 1) {
 	$_SESSION['datetime'] = date('Y-m-d H:i:s');
 
 	// DB
-	require_once '../../mod/core/connect-to-db.php';
-
-	// Track me
-	if ($_SESSION['user_id'] > 0) { // not system itself
-		require_once 'tracker.php';
-	} else {
-		$db = pdoConnect();
-	}
+	require_once 'connect-to-db.php';
 
 	// close session late if you want
 

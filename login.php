@@ -100,7 +100,7 @@ $error_list = array(
 	<div class="text-center">
 		<a href="/"><img src="<?php echo $logo; ?>" alt="BEA LOGO" width="99" height="80"></a>
 	</div>
-	<form role="form" action="../mod/core/auth.php" class="form auth_form" method="post" >
+	<form role="form" action="mod/core/auth.php" class="form auth_form" method="post" >
 		<div class="form-group">
 			<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" hidden>
 			<input type="hidden" name="http_referer" value="<? echo $http_referer; ?>" hidden>
