@@ -16,18 +16,18 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link p-2 mx-1" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="officers.php">Officers</a>
+        <a class="nav-link p-2 mx-1" href="officers.php">Officers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="events.php">Events</a>
+        <a class="nav-link p-2 mx-1" href="events.php">Events</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="meetings.php">Meetings</a>
+        <a class="nav-link p-2 mx-1" href="meetings.php">Meetings</a>
       </li>
     </ul>
   </div>
