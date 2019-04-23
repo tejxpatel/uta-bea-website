@@ -16,7 +16,7 @@ try {
 <meta charset="utf-8">
 <title>BEA UTA Home</title>
 
-<?php require_once "css/css.php"; ?>
+<?php require_once "php-include/head.php"; ?>
 
 </head>
 
