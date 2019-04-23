@@ -7,7 +7,7 @@
 <title>Meetings</title>
 
 
-<?php require_once "css/css.php"; ?>
+<?php require_once "php-include/head.php"; ?>
 
 
 </head>

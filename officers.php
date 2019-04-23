@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <title>Officers</title>
 
-<?php require_once "css/css.php"; ?>
+<?php require_once "php-include/head.php"; ?>
 
 </head>
 
