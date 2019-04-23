@@ -15,6 +15,27 @@
 		<?php require_once 'mod/template/admin-nav.php'; ?>
 		<?php //require_once '../mod/template/footer.php'; ?>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 <?php require_once 'js/js.php'; ?>
 </body>
 </html>
