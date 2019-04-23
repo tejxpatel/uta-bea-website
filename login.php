@@ -4,6 +4,10 @@ date_default_timezone_set("America/Chicago");
 // Start the session
 session_start();
 
+if ($_SESSION['auth'] === 1) {
+	header('Location: ./admin.php');
+}
+
 // Are you already logged in?
 // if (isset($_SESSION['user_id']) && isset($_SESSION['group_id']) && isset($_SESSION['username']) && isset($_SESSION['email']) && isset($_SESSION['first_name']) && isset($_SESSION['last_name']) && isset($_SESSION['theme']) && $_SESSION['auth']==1) {
 // 	header ('Location: /');
