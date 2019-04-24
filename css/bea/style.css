@@ -70,11 +70,16 @@ footer {
 /* ########## PARALLAX ########## */
 
 .parallax-container {
-  height: 45%;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: center;
+  font-size: 2em;
+  color: white;
 }
+
+
+
 
 .parallax-text {
   width: 60%;
@@ -107,18 +112,6 @@ footer {
 
 
 /* ########## MEETINGS PAGE   ########## */
-
-.meetings-header{
-    font-size: 5em;
-    color: white;
-    
-      }
-
-
-.meeting-agenda {
-padding-top: 100px;
-padding-bottom: 100px;
-      }
 
 
 

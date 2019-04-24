@@ -25,9 +25,9 @@
 <!-- ==================== HERO HEADER ==================== -->
 
 
-<div class="parallax-container meetings-hero" data-parallax="scroll" data-bleed="10" data-image-src="/img/meetings-page/meetings-header.jpg">
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="/img/meetings-page/meetings-header.jpg">
 
-<h1 class="parallax-text sub-page">Meetings</h1>
+<h1 class="parallax-text">Meetings</h1>
 
 </div>
 
