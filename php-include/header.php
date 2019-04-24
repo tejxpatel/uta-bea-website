@@ -7,30 +7,30 @@
 
 
 <!-- ====================  NAVIGATION  ==================== -->
-<div class="container-fluid">
+<!-- <div class="container-fluid"> -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
  <!-- <a  style="font-size: 2em;" class="navbar-brand" href="#">BEA</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
       <li class="nav-item">
-        <a class="nav-link p-2 mx-1" href="index.php">Home</a>
+        <a class="nav-link px-4" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2 mx-1" href="officers.php">Officers</a>
+        <a class="nav-link px-4" href="officers.php">Officers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2 mx-1" href="events.php">Events</a>
+        <a class="nav-link px-4" href="events.php">Events</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2 mx-1" href="meetings.php">Meetings</a>
+        <a class="nav-link px-4" href="meetings.php">Meetings</a>
       </li>
     </ul>
   </div>
 </nav>
 
-</div>
+<!-- </div> -->

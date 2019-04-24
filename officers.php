@@ -32,7 +32,7 @@
 <!-- ==================== HERO HEADER ==================== -->
 
 
-<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+<div class="parallax-container data-parallax="scroll" data-bleed="10" data-image-src="img/officers-page/hero-header.jpeg">
 
 <h1 class="parallax-text officer-hero-header">Our Officers</h1>
 
