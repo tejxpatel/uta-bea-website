@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 require_once './mod/core/connect-to-db.php';
 
@@ -10,6 +11,9 @@ try {
   var_dump($e);
 }
 ?><!DOCTYPE html>
+=======
+<!DOCTYPE html>
+>>>>>>> origin/tej
 <html>
 
 <head>
