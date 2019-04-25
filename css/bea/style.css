@@ -156,3 +156,13 @@ footer {
 .container-fluid {
   padding: 0;
 }
+
+a.dropdown-item {
+  color: #000 !important;
+}
+
+.max-height {
+  max-height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+}

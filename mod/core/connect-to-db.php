@@ -15,7 +15,7 @@ function pdoConnect() {
 
 	// connect
 	try{
-	$db = new PDO('mysql:host='.$db_host.';charset=utf8', $db_user, $db_pass);
+	$db = new PDO('mysql:host='.$db_host.';dbname=ondzeuta_bea;charset=utf8', $db_user, $db_pass);
 	$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_EXCEPTION
 	return $db;
