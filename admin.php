@@ -19,7 +19,7 @@ require_once 'mod/core/req_auth.php';
 		<div class="row p-2">
 			<div class="col-12">
 				<div class="card mb-3">
-				  <div class="card-header bg-primary text-white">Officers</div>
+				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Officers</h3> <a href="" class="btn btn-secondary btn-sm float-right">Add <i class="fa fas fa-plus"></i></a></div>
 				  <div class="card-body max-height p-0">
 				  	<div class="row p-0">
 				  		<div class="col-xs-12 col-md-6">
@@ -42,7 +42,7 @@ require_once 'mod/core/req_auth.php';
 
 			<div class="col-12 col-lg-6">
 				<div class="card mb-3">
-				  <div class="card-header bg-primary text-white">Events</div>
+				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Events</h3> <a href="" class="btn btn-secondary btn-sm float-right">Add <i class="fa fas fa-plus"></i></a></div>
 				  <div class="card-body max-height p-0">
 				  	<div class="row p-0">
 				  		<div class="col-xs-12 col-md-6">
@@ -65,7 +65,7 @@ require_once 'mod/core/req_auth.php';
 
 			<div class="col-12 col-lg-6">
 				<div class="card mb-3">
-				  <div class="card-header bg-primary text-white">Meetings</div>
+				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Meetings</h3> <a href="" class="btn btn-secondary btn-sm float-right">Add <i class="fa fas fa-plus"></i></a></div>
 				  <div class="card-body max-height p-0">
 				  	<div class="row p-0">
 				  		<div class="col-xs-12 col-md-6">
