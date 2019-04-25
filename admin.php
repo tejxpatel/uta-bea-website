@@ -90,6 +90,27 @@ require_once 'mod/core/req_auth.php';
 
 		<?php require_once 'php-include/footer.php'; ?>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 <?php require_once 'js/js.php'; ?>
 </body>
 </html>
