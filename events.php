@@ -11,7 +11,8 @@ $events = json_decode($eventsContents);
 <meta charset="utf-8">
 <title>Events</title>
 
-<?php require_once "php-include/head.php"; ?>
+
+<?php require_once "css/css.php"; ?>
 
 </head>
 
@@ -33,11 +34,10 @@ $events = json_decode($eventsContents);
 
 <!-- ==================== HERO HEADER ==================== -->
 
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/events-page/hero-header.jpeg">
-
-<h1 class="parallax-text">Upcoming Events</h1>
-
+<div class="jumbotron jumbotron-fluid events-jumbotron">
+  <div class="container">
+    <h1 class="jumbotron-text">EVENTS</h1>
+  </div>
 </div>
 
 
@@ -64,8 +64,6 @@ $events = json_decode($eventsContents);
 <!-- =========== PARALLAX SECTION =============== -->
 
 
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
-
 
 
 
@@ -74,7 +72,6 @@ $events = json_decode($eventsContents);
 <?php 
 
 require_once "php-include/footer.php";
-
 require_once "js/js.php";
 
 ?>

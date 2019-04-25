@@ -1,7 +1,7 @@
 <!-- ====================  HEADER  ==================== -->
 
 
-  <div class="img-fluid text-center" style="background-color: white;"><a href="index.html"><img src="img/bea/bea-header-logo.jpg" width="25%" /></a></div>
+  <div class="img-fluid text-center" style="background-color: white;"><a href="index.php"><img src="img/bea/bea-header-logo.jpg" width="25%" /></a></div>
 
 
 
