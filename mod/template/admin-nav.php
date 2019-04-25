@@ -1,12 +1,17 @@
 <?php
-//require_once '../core/req_auth.php';
+if (isset($_GET['logout']) && $_GET['logout'] == 1) {
+	session_destroy();
+	$_SESSION = array();
+	header('Location: ./index.php');
+}
+require_once 'mod/core/req_auth.php';
 ?>
 <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-primary shadow-none">
-	<a class="navbar-brand pl-0 ml-0" href="login.php" id="BEA">BEA</a>
+	<a class="navbar-brand pl-2 ml-0" href="login.php" id="BEA"><img style="max-width: 75px;" src="img/bea/BEA-Logo-white.png" alt="BEA LOGO"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse" id="mainNavCollapse">
+	<div class="collapse navbar-collapse justify-content-end pr-2" id="mainNavCollapse">
 		<ul class="nav justify-content-end">
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle p-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php
@@ -16,21 +21,21 @@
 						echo '<img src="img/user/user.jpg" width="30" height="30" alt="User" class="rounded-circle border">';
 					}
 				?></a>
-				<div class="dropdown-menu dropdown-menu-right">
+				<div class="dropdown-menu dropdown-menu-right text-primary">
 					<span class="dropdown-item-text"><small>Signed in as</small></span>
 					<span class="dropdown-item-text text-nowrap"><strong><?php echo $_SESSION['first_name'],' ',$_SESSION['last_name']; ?></strong></span>
-					<?php if ($_SESSION['group_id'] <= 6) { // referral partner and up?>
+					<?php if ($_SESSION['group_id'] <= 3) { // referral partner and up?>
 						<div class="dropdown-divider"></div>
-						<?php if ($_SESSION['group_id'] <= 5) { // advisor and up ?>
-						<a href="../5/directory.php" class="dropdown-item">Directory</a>
+						<?php if ($_SESSION['group_id'] <= 1) { // advisor and up ?>
+						<a href="../5/directory.php" class="dropdown-item">Create Admin</a>
 						<?php } ?>
-						<a href="../5/marketing.php" class="dropdown-item">Marketing</a>
-						<a href="../tool/" class="dropdown-item">Tools</a>
-						<a href="../tool/search.php" class="dropdown-item">Search</a>
+						<a href="../5/marketing.php" class="dropdown-item">New Member</a>
+						<a href="../tool/" class="dropdown-item">New Event</a>
+						<a href="../tool/search.php" class="dropdown-item">New Meeting</a>
 					<?php } ?>
 					<div class="dropdown-divider"></div>
-					<a href="../user/settings.php" class="dropdown-item">Settings</a>
-					<a href="../logout.php" class="dropdown-item">Logout</a>
+					<!--<a href="../user/settings.php" class="dropdown-item">Settings</a>-->
+					<a href="?logout=1" class="dropdown-item">Logout</a>
 				</div>
 			</li>
 		</ul>

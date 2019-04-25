@@ -1,6 +1,4 @@
 <?php
-// global directory where client stuff goes
-$folder_key = 'SkTnfebsPbR79KtDpiteradXGhfQWoo';
 
 if (isset($no_auth_required) && $no_auth_required == 1) {
 	# INI_SETs
@@ -38,7 +36,7 @@ if (isset($no_auth_required) && $no_auth_required == 1) {
 	$_SESSION['LAST_ACTIVITY'] = $_SERVER['REQUEST_TIME'];
 
 	# Are you authorized?
-	if (isset($_SESSION['user_id']) && isset($_SESSION['group_id']) && isset($_SESSION['username']) && isset($_SESSION['email']) && isset($_SESSION['first_name']) && isset($_SESSION['last_name']) && $_SESSION['auth'] === 1) {
+	if (isset($_SESSION['user_id']) && isset($_SESSION['group_id']) && isset($_SESSION['user_name']) && isset($_SESSION['email']) && isset($_SESSION['first_name']) && isset($_SESSION['last_name']) && $_SESSION['auth'] === 1) {
 
 		// Are you allowed to view this page?
 		if (
@@ -55,13 +53,13 @@ if (isset($no_auth_required) && $no_auth_required == 1) {
 			# No auth, GTFO!
 			session_unset();
 			session_destroy();
-			header('Location: ../../l5/login.php?e=auth');
+			header('Location: ./login.php?e=auth');
 			exit;
 		}
 
 	} else {
 		# Not logged in
-		header('Location: ../../l5/login.php?e=login_required&r=' . str_replace('&', '@', $_SERVER['REQUEST_URI']));
+		header('Location: ./login.php?e=login_required&r=' . str_replace('&', '@', $_SERVER['REQUEST_URI']));
 		exit;
 	}
 
@@ -69,14 +67,7 @@ if (isset($no_auth_required) && $no_auth_required == 1) {
 	$_SESSION['datetime'] = date('Y-m-d H:i:s');
 
 	// DB
-	require_once '../../mod/core/connect-to-db.php';
-
-	// Track me
-	if ($_SESSION['user_id'] > 0) { // not system itself
-		require_once 'tracker.php';
-	} else {
-		$db = pdoConnect();
-	}
+	require_once 'connect-to-db.php';
 
 	// close session late if you want
 

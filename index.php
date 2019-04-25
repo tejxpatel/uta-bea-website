@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+require_once './mod/core/connect-to-db.php';
+
+$q = 'SELECT * FROM `ondzeuta_bea`.`event`';
+$db = pdoConnect();
+try {
+  $db->query($q);
+  //echo password_hash('1234567', PASSWORD_DEFAULT);
+}catch (Exception $e) {
+  var_dump($e);
+}
+?><!DOCTYPE html>
 <html>
 
 <head>
