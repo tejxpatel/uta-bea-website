@@ -17,7 +17,7 @@ try {
 <meta charset="utf-8">
 <title>BEA UTA Home</title>
 
-<?php require_once "css/css.php"; ?>
+<?php require_once "php-include/head.php"; ?>
 
 </head>
 
@@ -49,7 +49,7 @@ try {
 <!-- ==================== MAIN CONTENT ==================== -->
 
 <!-- =========== WHO WE ARE SECTION =============== -->
-<div class="home-section">
+<div class="page-padding">
 <h2 class="center-text">WHO ARE WE</h2>
 
 <br>
@@ -110,10 +110,10 @@ try {
 
 <!-- =========== WHAT WE DO SECTION =============== -->
 
-<div class="home-section">
 
 
-<div class="container">
+
+
   <div class="row">
     <div class="col">
       <h2>WHAT WE DO</h2>
@@ -150,7 +150,6 @@ BEA is the premiere international academic media organization, driving insights,
 </div>
 
 
-</div>
 
 
 <!-- =========== PARALLAX SECTION =============== -->
@@ -159,6 +158,8 @@ BEA is the premiere international academic media organization, driving insights,
 
 <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
 
+
+</div>
 
 <!-- ==================== FOOTER ==================== -->
 
