@@ -55,15 +55,11 @@ color: rgba(0, 0, 0, 1);
 .jumbotron-text {
 padding: 5%;
 color: white;
-font-size: 4em; 
+font-size: 4em;
 text-align: center;
 margin: auto;
 text-shadow: 2px 2px black;
 }
-
-
-
-
 /* ########## BODY  ########## */
 
 body {
@@ -132,7 +128,7 @@ footer {
 .parallax-text {
   width: 60%;
   color: white;
-  font-size: 3em; 
+  font-size: 3em;
   text-align: center;
   margin: auto;
   text-shadow: 2px 2px black;
@@ -143,22 +139,22 @@ footer {
 
 .home-jumbotron {
   background-image: url("/img/home/header.jpg");
-  
+
 }
 
 .events-jumbotron {
   background-image: url("/img/events/header.jpg");
-  
+
 }
 
 .officers-jumbotron {
   background-image: url("/img/officers/header.jpg");
-  
+
 }
 
 .meetings-jumbotron {
   background-image: url("/img/meetings/header.jpg");
-  
+
 }
 
 
@@ -236,4 +232,10 @@ a.dropdown-item {
   max-height: 600px;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    font-size: 1.3rem;
+  }
 }
