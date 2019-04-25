@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <title>Officers</title>
 
-<?php require_once "php-include/head.php"; ?>
+<?php require_once "css/css.php"; ?>
 
 </head>
 
@@ -31,13 +31,11 @@
 
 <!-- ==================== HERO HEADER ==================== -->
 
-
-<div class="parallax-container data-parallax="scroll" data-bleed="10" data-image-src="img/officers-page/hero-header.jpeg">
-
-<h1 class="parallax-text officer-hero-header">Our Officers</h1>
-
+<div class="jumbotron jumbotron-fluid meetings-jumbotron">
+  <div class="container">
+    <h1 class="jumbotron-text">OFFICERS</h1>
+  </div>
 </div>
-
 
 
 <!-- ==================== MAIN CONTENT ==================== -->
@@ -137,11 +135,6 @@
 
 
 <!-- =========== PARALLAX SECTION =============== -->
-
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
-
-
 
 
 <!-- ==================== FOOTER ==================== -->
