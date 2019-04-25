@@ -45,7 +45,7 @@ $events = json_decode($eventsContents);
 <!-- ==================== MAIN CONTENT ==================== -->
 <!-- ====================================================== -->
 
-<div class="container page-padding"> 
+<div class="container page-padding">
 
 <?php foreach($events->events as $event){?>
 
@@ -54,7 +54,7 @@ $events = json_decode($eventsContents);
         <p class="blog-post-meta"><strong>Date: </strong><?php echo strtoupper($event->date); ?>, <small><?php echo strtoupper($event->time); ?></small></p>
         <p class="blog-post-meta"><strong>Location: </strong><?php echo strtoupper($event->location); ?></p>
         <p><?php echo strtoupper($event->description); ?></p>
-	</div>
+	</div><hr></hr>
 
 <?php } ?>
 
@@ -69,7 +69,7 @@ $events = json_decode($eventsContents);
 
 <!-- ==================== FOOTER ==================== -->
 
-<?php 
+<?php
 
 require_once "php-include/footer.php";
 require_once "js/js.php";
