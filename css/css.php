@@ -1,12 +1,15 @@
 <?php
 $css = 1;
-//$animate_css = 1;
 if ($css == 1){
 ?>
-<link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/bea/style.css?t=2018-23-05">
-<?php } ?>
-<?php if ($animate_css == 1) {?>
-<link rel="stylesheet" type="text/css" href="./css/animate/animate.css">
+<!-- ==================== STYLE SHEETS  ==================== -->
+
+<!-- ==================== BOOTSTRAP CDN   ==================== -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css"/>
+
+<!-- ==================== STYLE SHEETS   ==================== -->
+<link rel="stylesheet" type="text/css" href="css/bea/style.css"/>
+
+<!-- ==================== FONT AWESOME CDN   ==================== -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <?php } ?>

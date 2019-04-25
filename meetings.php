@@ -7,7 +7,7 @@
 <title>Meetings</title>
 
 
-<?php require_once "php-include/head.php"; ?>
+<?php require_once "css/css.php"; ?>
 
 
 </head>
@@ -24,19 +24,17 @@
 
 <!-- ==================== HERO HEADER ==================== -->
 
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="/img/meetings-page/meetings-header.jpg">
-
-<h1 class="parallax-text">Meetings</h1>
-
+<div class="jumbotron jumbotron-fluid meetings-jumbotron">
+  <div class="container">
+    <h1 class="jumbotron-text">MEETINGS</h1>
+  </div>
 </div>
-
 
 
 
 <!-- ==================== MAIN CONTENT ==================== -->
 
-<div class="container meeting-agenda"> 
+<div class="container meeting-agenda page-padding"> 
 
 <h1>General Monthly Meeting</h1>
 
@@ -73,16 +71,12 @@
 <!-- ===== MAIN CONTENT ===== -->
 
 
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
-
-
 <!-- ==================== FOOTER ==================== -->
 
 <?php 
 
 require_once "php-include/footer.php";
 require_once "js/js.php";
-
  ?>
 
 

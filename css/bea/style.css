@@ -14,6 +14,62 @@ font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto+Condensed');
 
 
+
+
+
+
+
+
+/* =============== OVERRIDE BOOTSTRAP STYLE =============== */
+
+
+ .bg-dark {
+  background-color: #0064b1 !important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-link:hover {
+color: white !important;
+}
+
+.nav-item:hover {
+background-color: #f58025 !important;
+box-shadow: 0 4px 2px -2px black !important;
+}
+
+
+.navbar-light .navbar-text a {
+color: rgba(0, 0, 0, 1);
+}
+
+.navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
+color: rgba(0, 0, 0, 1);
+}
+
+
+.jumbotron {
+
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron-text {
+padding: 5%;
+color: white;
+font-size: 4em; 
+text-align: center;
+margin: auto;
+text-shadow: 2px 2px black;
+}
+
+
+
+
 /* ########## BODY  ########## */
 
 body {
@@ -79,8 +135,6 @@ footer {
 }
 
 
-
-
 .parallax-text {
   width: 60%;
   color: white;
@@ -88,6 +142,29 @@ footer {
   text-align: center;
   margin: auto;
   text-shadow: 2px 2px black;
+}
+
+/* ########## HOME PAGE ########## */
+
+
+.home-jumbotron {
+  background-image: url("/img/home/header.jpg");
+  
+}
+
+.events-jumbotron {
+  background-image: url("/img/events/header.jpg");
+  
+}
+
+.officers-jumbotron {
+  background-image: url("/img/officers/header.jpg");
+  
+}
+
+.meetings-jumbotron {
+  background-image: url("/img/meetings/header.jpg");
+  
 }
 
 

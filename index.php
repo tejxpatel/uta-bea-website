@@ -1,14 +1,4 @@
-<?php
-require_once './mod/core/connect-to-db.php';
-
-$q = 'SELECT * FROM `ondzeuta_bea`.`event`';
-$db = pdoConnect();
-try {
-  $db->query($q);
-}catch (Exception $e) {
-  var_dump($e);
-}
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -16,7 +6,10 @@ try {
 <meta charset="utf-8">
 <title>BEA UTA Home</title>
 
-<?php require_once "php-include/head.php"; ?>
+<?php 
+
+require_once "css/css.php";
+?>
 
 </head>
 
@@ -36,16 +29,16 @@ try {
 <!-- ==================== HERO HEADER ==================== -->
 
 
-<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="img/home-page/home-header.jpg">
-
-<h1 class="parallax-text">Welcome to the UTA Chapter of the Broadcast Education Association!</h1>
-
+<div class="jumbotron jumbotron-fluid home-jumbotron">
+  <div class="container">
+    <h1 class="jumbotron-text">HOME</h1>
+  </div>
 </div>
 
 
 
-
 <!-- ==================== MAIN CONTENT ==================== -->
+
 
 <!-- =========== WHO WE ARE SECTION =============== -->
 <div class="page-padding">
@@ -102,60 +95,55 @@ try {
 </div>
 
 
-<!-- =========== PARALLAX SECTION =============== -->
 
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
 
 <!-- =========== WHAT WE DO SECTION =============== -->
 
+<div class="container"> 
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="img/home/img-500.svg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" src="img/home/img-500.svg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="img/home/img-500.svg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
 
 
-
-
-  <div class="row">
-    <div class="col">
-      <h2>WHAT WE DO</h2>
-      <p>
-BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals. The association’s publications, annual convention, web-based programs, and regional district activities provide opportunities for juried production competition and presentation of current scholarly research related to aspects of the electronic media. These areas include media audiences, economics, law and policy, regulation, news, management, aesthetics, social effects, history, and criticism, among others.BEA is concerned with electronic media curricula, placing an emphasis on interactions among the purposes, developments, and practices of the industry and imparting this information to future professionals.  BEA serves as a forum for exposition, analysis and debate of issues of social importance to develop members’ awareness and sensitivity to these issues and to their ramifications, which will ultimately help students develop as more thoughtful practitioners.
-</p>
-
-
-    </div>
-    <div class="col">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/home-page/18422432_217182558797808_3112332205953372463_o.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/home-page/18422432_217182558797808_3112332205953372463_o.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/home-page/18422432_217182558797808_3112332205953372463_o.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- =========== PARALLAX SECTION =============== -->
-
-
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
 
 
 </div>
