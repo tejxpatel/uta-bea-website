@@ -42,7 +42,7 @@ require_once "css/css.php";
 
 <!-- =========== WHO WE ARE SECTION =============== -->
 <div class="page-padding">
-<h2 class="center-text">WHO ARE WE</h2>
+<h1 class="center-text">WHO ARE WE</h1>
 
 <br>
 
