@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <title>Officers</title>
 
-<?php require_once "css/css.php"; ?>
+<?php require_once "php-include/head.php"; ?>
 
 </head>
 
@@ -31,11 +31,13 @@
 
 <!-- ==================== HERO HEADER ==================== -->
 
-<div class="jumbotron jumbotron-fluid meetings-jumbotron">
-  <div class="container">
-    <h1 class="jumbotron-text">OFFICERS</h1>
-  </div>
+
+<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+
+<h1 class="parallax-text officer-hero-header">Our Officers</h1>
+
 </div>
+
 
 
 <!-- ==================== MAIN CONTENT ==================== -->
@@ -51,6 +53,7 @@
   <div class="row">
     <!-- Team Member 1 -->
     <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
@@ -61,6 +64,7 @@
     </div>
     <!-- Team Member 2 -->
     <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
@@ -93,6 +97,7 @@
   <div class="row">
     <!-- Team Member 1 -->
     <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
@@ -103,6 +108,7 @@
     </div>
     <!-- Team Member 2 -->
     <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
@@ -114,6 +120,7 @@
    
     <!-- Team Member 3 -->
     <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
         <div class="card-body text-center">
@@ -135,6 +142,11 @@
 
 
 <!-- =========== PARALLAX SECTION =============== -->
+
+
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
+
+
 
 
 <!-- ==================== FOOTER ==================== -->
