@@ -4,7 +4,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == 1) {
 	$_SESSION = array();
 	header('Location: ./index.php');
 }
-require_once 'mod/core/req_auth.php';
+//require_once 'mod/core/req_auth.php';
 ?>
 <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-primary shadow-none">
 	<a class="navbar-brand pl-2 ml-0" href="login.php" id="BEA"><img style="max-width: 75px;" src="img/bea/BEA-Logo-white.png" alt="BEA LOGO"></a>
