@@ -17,13 +17,14 @@ font-family: 'Open Sans', sans-serif; */
 /* =============== OVERRIDE BOOTSTRAP STYLE =============== */
 
 
- .bg-dark {
+ .bg-dark-nav {
   background-color: #0064b1 !important;
 }
 
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 1);
+  background-color: #0064b1 !important;
 }
 
 .nav-link:hover {
