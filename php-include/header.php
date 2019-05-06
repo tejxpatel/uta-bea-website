@@ -9,7 +9,7 @@
 <!-- ====================  NAVIGATION  ==================== -->
 <!-- <div class="container-fluid"> -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-nav p-0">
  <!-- <a  style="font-size: 2em;" class="navbar-brand" href="#">BEA</a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false">
     <span class="navbar-toggler-icon"></span>

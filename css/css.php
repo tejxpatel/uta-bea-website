@@ -4,7 +4,7 @@ if ($css == 1){
 ?>
 <!-- ==================== STYLE SHEETS  ==================== -->
 
-<!-- ==================== BOOTSTRAP CDN   ==================== -->
+<!-- ==================== BOOTSTRAP ==================== -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css"/>
 
 <!-- ==================== STYLE SHEETS   ==================== -->
