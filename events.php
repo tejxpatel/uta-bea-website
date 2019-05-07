@@ -1,7 +1,11 @@
 <?php
-$eventsContents = file_get_contents('./mod/mock-events.json');
-$events = json_decode($eventsContents);
+session_start();
 
+require_once 'mod/core/connect-to-db.php';
+
+$get_events = "SELECT * FROM ondzeuta_bea.event WHERE type = 'event' AND deleted IS NULL AND date >= NOW();";
+
+$db = pdoConnect();
 
 ?><!DOCTYPE html>
 <html>
@@ -46,20 +50,26 @@ $events = json_decode($eventsContents);
 <!-- ==================== MAIN CONTENT ==================== -->
 <!-- ====================================================== -->
 
-<div class="container page-padding"> 
-
-<?php foreach($events->events as $event){?>
-
-	<div class="blog-post">
-        <h2 class="blog-post-title"><?php echo strtoupper($event->title); ?></h2>
-        <p class="blog-post-meta"><strong>Date: </strong><?php echo strtoupper($event->date); ?>, <small><?php echo strtoupper($event->time); ?></small></p>
-        <p class="blog-post-meta"><strong>Location: </strong><?php echo strtoupper($event->location); ?></p>
-        <p><?php echo strtoupper($event->description); ?></p>
+<div class="container page-padding">
+	<div class="row">
+		<?php foreach ($db->query($get_events) as $row){ ?>
+		<div class="col-12">
+			<?php if (!empty($row['image'])){ ?>
+			<img src="img/events/<?php echo $row['image']; ?>" alt="<?php $row['title']; ?> Image" class="img-thumbnail img-responsive" />
+			<?php } else { ?>
+			<img src="img/events/header.jpg" alt="<?php $row['title']; ?> Image" class="img-thumbnail img-responsive" />
+			<?php } ?>
+			<h1><?php echo $row['title']; ?></h1>
+			<h2><?php echo Date('M d, Y', strtotime($row['date'])); ?> From <small><?php echo $row['time']; ?></small></h2>
+			<p class="lead"><?php echo $row['description']; ?></p>
+		</div>
+		<?php } ?>
+		<?php if (count($db->query($get_events)) <= 0){ ?>
+		<div class="col-12">
+			<h1 class="display-1">No upcoming events, please come back later</h1>
+		</div>
+		<?php } ?>
 	</div>
-
-<?php } ?>
-
-
 </div>
 
 <!-- =========== PARALLAX SECTION =============== -->

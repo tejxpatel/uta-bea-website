@@ -29,6 +29,9 @@
       <li class="nav-item">
         <a class="nav-link px-4" href="meetings.php">Meetings</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link px-4" href="admin.php">Admin</a>
+      </li>
     </ul>
   </div>
 </nav>

@@ -1,8 +1,13 @@
 <?php
-//require_once 'mod/core/req_auth.php';
+require_once 'mod/core/req_auth.php';
 
+$db = pdoConnect();
+
+$get_officers = 'SELECT user_id, first_name, last_name, bio, title, major, user_name, email, image FROM ondzeuta_bea.user WHERE deleted IS NULL';
+$get_events = 'SELECT event_id, name, date, time, location, type, description, created_by, image FROM ondzeuta_bea.event WHERE deleted IS NULL';
 //var_dump($_SESSION);
 //$animate_css = 1;
+
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -14,314 +19,240 @@
 	<?php require_once 'css/css.php'; ?>
 </head>
 <body>
+  <div class="container-fluid p-0">
+    <div class="modal fade" id="officersModal" tabindex="-1" role="dialog" aria-labelledby="officersModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="officersModalLabel">Add Officer</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="officers-form" enctype="multipart/form-data" action="mod/member/new.php" method="POST">
+            <div class="modal-body">
 
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input class="form-control" name="first_name" type="text" id="first-name" placeholder="John" required>
+              </div>
+
+             
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input class="form-control" name="last_name" type="text" id="last-name" placeholder="Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" name="email" type="email" id="email" placeholder="john.doe@mavs.uta.edu" required>
+              </div>
+
+
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input class="form-control" name="title" type="text" id="title" placeholder="President" required>
+              </div>
+
+
+              <div class="form-group">
+                <label for="bio">Biography</label>
+                <textarea class="form-control" name="bio" id="bio" placeholder="John loves puppies and spending time at the rodeo on Fridays."></textarea>
+              </div>
+
+
+              <div class="form-group">
+                <label for="major">Major</label>
+                <input class="form-control" name="major" type="text" id="major" placeholder="Journalism" required>
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input class="form-control" name="user_name" type="text" id="username" placeholder="john_doe" required>
+              </div>
+
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" name="password" type="password" id="password" placeholder="1234567" required>
+              </div>
+
+              <div class="form-group">
+                <label>Profile Photo</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file">
+                          <input type="file" name="image" id="image" accept="image/*">
+                        </span>
+                    </span>
+                </div>
+                <img id='img-upload'/>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <a href=""><button type="button" class="btn btn-danger">Close</button></a>
+              <input type="submit" name="add" class="btn btn-success">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eventModalLabel">Add Event or Meeting</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="events-form" enctype="multipart/form-data" action="mod/event/new.php" method="POST">
+            <div class="modal-body">
+
+              <div class="form-group">
+                <label for="event-title">Event Title</label>
+                <input class="form-control" type="text" name="name" id="event-title" placeholder="Former Vice President of the United Sates Joe Biden, speaks Broadcasting at UTA" required>
+              </div>
+
+              <div class="form-group">
+                <label for="event-date">Date</label>
+                  <input class="form-control" type="date" name="date" id="event-date" placeholder="MM/DD/YYY" required>
+              </div>
+
+
+              <div class="form-group">
+                <label for="start-time">Time</label>
+                <input class="form-control" type="text" name="time" id="start-time" placeholder="1:45-4:00 PM" required>
+              </div>
+
+              <div class="form-group">
+                <label for="event-location">Event Location</label>
+                <input class="form-control" type="text" name="location" id="event-location" placeholder="Blue Bonnet Theatre" required>
+              </div>
+
+              <div class="form-group">
+                <label for="event-type">Type</label>
+                <select class="form-control" id="event-type" name="type">
+                  <option value="meeting">Meeting</option>
+                  <option value="event">Event</option>
+                </select>
+              </div>
+
+
+              <div class="form-group">
+                <label for="event-description">Event Description</label>
+                <textarea class="form-control" name="description" id="event-description" placeholder="Former VPOTUS knows a thing or two about broadcasting that many have no idea about. He comes to our beautiful campus for a tips and tricks presentation on best practices." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Event Banner</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file">
+                          <input type="file" name="banner" id="banner">
+                        </span>
+                    </span>
+                </div>
+                <img id='img-upload'/>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <input type="submit" name="add" class="btn btn-success" />
+            </div>
+                
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 <!-- OFFICERS -->
-
-	<div class="container-fluid">
+	<div class="container-fluid p-0">
 		<?php require_once 'mod/template/admin-nav.php'; ?>
 		<div class="row p-2">
 			<div class="col-12">
 				<div class="card mb-3">
 				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Officers</h3>
-					<button type="button" class="btn btn-secondary btn-sm float-right" data-toggle="modal" data-target="#exampleModal"> Add <i class="fa fas fa-plus"></i></button></div>
-				  <div class="card-body max-height p-0">
-				  	<div class="row p-0">
-				  		<div class="col-xs-12 col-md-6">
-				  			<div class="card-body">
-						  	<div class="card" style="width: 18rem;">
-							  <img class="card-img-top" src="./img/user/user.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    <a href="#" class="btn btn-warning">Edit</a>
-							    <a href="#" class="btn btn-danger">Delete</a>
-							  </div>
-							</div>
-						  </div>
-				  		</div>
+            <?php if ($_SESSION['group_id'] <= 1) { ?>
+  					<button type="button" class="btn btn-secondary btn-sm float-right" data-toggle="modal" data-target="#officersModal"> Add <i class="fa fas fa-plus"></i></button>
+            <?php } ?>
+          </div>
+
+				  <div class="card-body max-height">
+				  	<div class="row">
+              <?php foreach ($db->query($get_officers) as $row) { ?>
+				  		<div class="col-xs-12 col-sm-4 col-md-3 mb-3">
+                <div class="card">
+                  <?php if (!empty($row['image'])){ ?>
+                  <img class="card-img-top" src="./img/user/<?php echo $row['image']; ?>" alt="Card image cap" />
+                  <?php } else { ?>
+                  <img class="card-img-top" src="./img/user/user.jpg" alt="Card image cap" />
+                  <?php } ?>
+                  <div class="card-body">
+                    <h5 class="card-title"><?php echo $row['first_name'],' ',$row['last_name'] ?></h5>
+                    <?php if (!empty($row['bio'])) { ?>
+                    <p class="card-text"><?php echo $row['bio']; ?></p>
+                    <?php } ?>
+                    <?php if ($_SESSION['group_id'] <= 1 || $_SESSION['user_id'] == $row['user_id']) { ?>
+                    <a href="#" class="btn btn-warning edit-officer" data-officer='<?php echo json_encode($row); ?>'>Edit</a>
+                    <?php if ($_SESSION['group_id'] <= 1){ ?>
+                    <a href="mod/member/delete.php?id=<?php echo $row['user_id']; ?>" class="btn btn-danger delete-officer">Delete</a>
+                    <?php }
+                        } ?>
+                  </div>
+                </div>
+              </div>
+              <?php } ?>
 				  	</div>
 				  </div>
+
 				</div>
 			</div>
-
-<!-- ADD OFFICER MODAL -->
-
-			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Officer</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-			<form>
-
-  <div class="form-group">
-    <label for="firstName">First Name</label>
-		<input class="form-control" type="text" id="firstName">
-  </div>
-
- 
-  <div class="form-group">
-    <label for="lastName">Last Name</label>
-		<input class="form-control" type="text" id="lastName">
-  </div>
-
-	<div class="form-group">
-    <label for="major">Email</label>
-		<input class="form-control" type="text" id="major">
-  </div>
-
-
-  <div class="form-group">
-    <label for="title">Position</label>
-		<input class="form-control" type="text" id="title">
-  </div>
-
-
-	<div class="form-group">
-    <label for="bio">Biography</label>
-		<input class="form-control" type="text" id="bio">
-  </div>
-
-
-	<div class="form-group">
-    <label for="major">Major</label>
-		<input class="form-control" type="text" id="major">
-  </div>
-
-
-
-	<div class="form-group">
-    <label for="username">Username</label>
-		<input class="form-control" type="text" id="username">
-  </div>
-
-
-	<div class="form-group">
-  <label for="password">Password</label>
-    <input class="form-control" type="password" id="password">
-</div>
-
-
-
-	<div class="form-group">
-        <label>Profile Photo</label>
-        <div class="input-group">
-            <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
-                  <input type="file" id="imgInp">
-                </span>
-            </span>
-        </div>
-        <img id='img-upload'/>
-    </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success ">Submit</button>
-      </div>
-			</form>
-    </div>
-  </div>
-</div>
 
 <!------------------------------------------>
 <!-------------- EVENTS --------------->
 
-			<div class="col-12 col-lg-6">
+			<div class="col-12">
 				<div class="card mb-3">
-				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Events</h3>
+				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Events & Meetings</h3>
 					<button type="button" class="btn btn-secondary btn-sm float-right" data-toggle="modal" data-target="#eventModal"> Add <i class="fa fas fa-plus"></i></button></div>
-				  <div class="card-body max-height p-0">
-				  	<div class="row p-0">
-				  		<div class="col-xs-12 col-md-6">
-				  			<div class="card-body">
-						  	<div class="card" style="width: 18rem;">
-							  <img class="card-img-top" src="./img/user/user.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    <a href="#" class="btn btn-warning">Edit</a>
-							    <a href="#" class="btn btn-danger">Delete</a>
-							  </div>
-							</div>
-						  </div>
-				  		</div>
-				  	</div>
-				  </div>
-				</div>
-			</div>
-
-
-
-
-
-<!-------------- EVENT MODAL --------------->
-
-<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-<form>
-
-<div class="form-group">
-    <label for="eventTitle">Event Title</label>
-		<input class="form-control" type="text" id="eventTitle">
-  </div>
-
-	<div class="form-group">
-  <label for="eventDate">Date</label>
-    <input class="form-control" type="date" id="eventDate" placeholder="MM/DD/YYY">
-</div>
-
-
-<div class="form-group">
-  <label for="startTime">Start Time</label>
-    <input class="form-control" type="time" id="startTime" placeholder="1:45 PM">
-</div>
-
-
-<div class="form-group">
-  <label for="endTime">End Time</label>
-    <input class="form-control" type="time" id="endTime" placeholder="2:45 PM">
-</div>
-
-<div class="form-group">
-    <label for="eventDescription">Event Location</label>
-		<input class="form-control" type="text" id="eventDescription">
-  </div>
-
-
-	<div class="form-group">
-    <label for="eventDescription">Event Description</label>
-		<input class="form-control" type="text" id="eventDescription">
-  </div>
-
-	<div class="form-group">
-        <label>Event Banner</label>
-        <div class="input-group">
-            <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
-                  <input type="file" id="imgInp">
-                </span>
-            </span>
-        </div>
-        <img id='img-upload'/>
-    </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success ">Submit</button>
-      </div>
-			
-			</form>
-
-    </div>
-  </div>
-</div>
-
-<!------------------------------------->
-<!-------------- MEETINGS --------------->
-
-			<div class="col-12 col-lg-6">
-				<div class="card mb-3">
-				  <div class="card-header bg-primary text-white justfy-content-center"><h3 class="d-inline">Meetings</h3>
-				  <button type="button" class="btn btn-secondary btn-sm float-right" data-toggle="modal" data-target="#meetingsModal"> Add <i class="fa fas fa-plus"></i></button></div>
-					<div class="card-body max-height p-0">
-				  	<div class="row p-0">
-				  		<div class="col-xs-12 col-md-6">
-				  			<div class="card-body">
-						  	<div class="card" style="width: 18rem;">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							    <a href="#" class="btn btn-warning">Edit</a>
-							    <a href="#" class="btn btn-danger">Delete</a>
-							  </div>
-							</div>
-						  </div>
-				  		</div>
-				  	</div>
-				  </div>
+				  <div class="card-body max-height">
+            <div class="row">
+              <?php foreach ($db->query($get_events) as $row) { ?>
+              <div class="col-xs-12 col-sm-4 col-md-3 mb-3">
+                <div class="card">
+                  <?php if (!empty($row['image'])){ ?>
+                  <img class="card-img-top" src="./img/events/<?php echo $row['image']; ?>" alt="Card image cap" />
+                  <?php } else { ?>
+                  <img class="card-img-top" src="./img/events/header.jpg" alt="Card image cap" />
+                  <?php } ?>
+                  <div class="card-body">
+                    <h5 class="card-title"><?php echo $row['name']; ?></h5>
+                    <?php if (!empty($row['description'])) { ?>
+                    <p class="card-text"><?php echo $row['description'] ?></p>
+                    <?php } ?>
+                    <p class="card-text"><?php echo Date('m/d/Y', strtotime($row['date'])); ?> <small><?php echo $row['time']; ?></small></p>
+                    <?php if ($_SESSION['group_id'] <= 1 || $_SESSION['user_id'] == $row['created_by']) { ?>
+                    <a href="#" class="btn btn-warning edit-event" data-event='<?php echo json_encode($row); ?>'>Edit</a>
+                    <a href="mod/event/delete.php?id=<?php echo $row['user_id']; ?>" class="btn btn-danger delete-event">Delete</a>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
+              <?php } ?>
+            </div>
+          </div>
 				</div>
 			</div>
 		</div>
-
-<!-------------- Meetings Modal --------------->
-		<div class="modal fade" id="meetingsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="meetingsModalLabel">Add Meeting</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-<form>
-
-			<div class="form-group">
-    <label for="meetingTitle">Meeting Title</label>
-		<input class="form-control" type="text" id="meetingTitle">
-	
-  </div>
-
-	<div class="form-group">
-  <label for="meetingDate">Date</label>
-    <input class="form-control" type="date" id="meetingDate"  placeholder="MM/DD/YYY">
-</div>
-
-<div class="form-group">
-  <label for="startTime">Start Time</label>
-    <input class="form-control" type="time" id="startTime" placeholder="1:45 PM">
-</div>
-
-
-<div class="form-group">
-  <label for="endTime">End Time</label>
-    <input class="form-control" type="time" id="endTime" placeholder="2:45 PM">
-</div>
-
-<div class="form-group">
-    <label for="meetingLocation">Meeting Location</label>
-		<input class="form-control" type="text" id="meetingLocation">
-  </div>
-
-
-	<div class="form-group">
-    <label for="meetingAgenda">Meeting Agenda</label>
-		<textarea class="form-control" rows="5" id="meetingAgenda"></textarea>
-  </div>
-
- 
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success ">Submit</button>
-      </div>
-			
-			</form>
-
-    </div>
-  </div>
-</div>
-
 
 		<?php require_once 'php-include/footer.php'; ?>
 	</div>
