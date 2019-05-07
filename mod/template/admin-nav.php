@@ -1,9 +1,4 @@
 <?php
-if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-	session_destroy();
-	$_SESSION = array();
-	header('Location: ./index.php');
-}
 //require_once 'mod/core/req_auth.php';
 ?>
 <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-primary shadow-none">
@@ -26,12 +21,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == 1) {
 					<span class="dropdown-item-text text-nowrap"><strong><?php echo $_SESSION['first_name'],' ',$_SESSION['last_name']; ?></strong></span>
 					<?php if ($_SESSION['group_id'] <= 3) { // referral partner and up?>
 						<div class="dropdown-divider"></div>
-						<?php if ($_SESSION['group_id'] <= 1) { // advisor and up ?>
-						<a href="../5/directory.php" class="dropdown-item">Create Admin</a>
-						<?php } ?>
-						<a href="../5/marketing.php" class="dropdown-item">New Member</a>
-						<a href="../tool/" class="dropdown-item">New Event</a>
-						<a href="../tool/search.php" class="dropdown-item">New Meeting</a>
+						<a href="../5/directory.php" class="dropdown-item">Change Password</a>
 					<?php } ?>
 					<div class="dropdown-divider"></div>
 					<!--<a href="../user/settings.php" class="dropdown-item">Settings</a>-->
