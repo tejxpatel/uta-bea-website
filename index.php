@@ -41,32 +41,29 @@ require_once "css/css.php";
 
 
 <!-- =========== WHO WE ARE SECTION =============== -->
-<div class="page-padding">
-<h1 class="center-text">WHO ARE WE</h1>
 
-<br>
-
+<h1 class="center-text py-5">About Us</h1>
 
 <div class="container center-text who-we-are">
 
   <div class="row center-text">
 
   
-    <div class="col-sm center-text">
+    <div class="col-xs-12 col-sm-4 col-md-4  center-text">
     <i class="fas fa-flag"></i>
 
-      <h3>Mission</h3>
+      <h3>Our Mission</h3>
       <p>
 
       The UTA Chapter of the Broadcast Education Association goal is to provide UTA students that are majoring in broadcasting with information on industry knowledge, intern opportunities, events, and social networking.
 
       </p>
     </div>
-    <div class="col-sm center-text">
+    <div class="col-xs-12 col-sm-4 col-md-4 center-text">
 
    <i class="fas fa-video"></i> 
 
-    <h3>Members</h3>
+    <h3>Our Members</h3>
 
     <p>
     We offer excellent leadership and  wonderful opportunities for students interested in a career in broadcasting. 
@@ -76,7 +73,7 @@ require_once "css/css.php";
 
 </p>
     </div>
-    <div class="col-sm center-text">
+    <div class="col-xs-12 col-sm-4 col-md-4 center-text">
     <i class="fas fa-users"></i>
 
     <h3>Get Involved</h3>
@@ -92,7 +89,7 @@ require_once "css/css.php";
   </div>
 </div>
 
-</div>
+
 
 
 
@@ -101,17 +98,17 @@ require_once "css/css.php";
 
 <div class="container"> 
 
-        <!-- START THE FEATURETTES -->
+      
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">What We Do </h2>
+            <p class="lead">BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals.The UTA Chapter of BEA offers students pursuing a career in broadcasting many different oppurtunites to advance in their field. </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="img/home/img-500.svg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto rounded" src="img/home/1st-meeting-ever.png" alt="1st Meeting Ever">
           </div>
         </div>
 
@@ -119,11 +116,11 @@ require_once "css/css.php";
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Bridge to career opportunities. </h2>
+            <p class="lead">BEA offers many networking oppurtunities within the UTA chapter including the annual CMA conference that the chapter attends every year. </p>
           </div>
           <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" src="img/home/img-500.svg" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/cma-conference.jpg" alt="CMA Conference 2">
           </div>
         </div>
 
@@ -131,17 +128,17 @@ require_once "css/css.php";
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Bringing professionals to you. </h2>
+            <p class="lead">BEA will often bring in many guest speakers to provide the members with real world expericence from different professionals at different levels of the broadcasting business.</p>
           </div>
           <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="img/home/img-500.svg" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/dale-hansen.jpg" alt="Dale Hansen with Victor">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <!-- /END THE FEATURETTES -->
+       
 
 
 
