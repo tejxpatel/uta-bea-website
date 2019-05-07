@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+require_once 'mod/core/connect-to-db.php';
+
+$get_meetings = "SELECT * FROM ondzeuta_bea.event WHERE type = 'meeting' AND deleted IS NULL AND date >= NOW();";
+
+$db = pdoConnect();
+
+
+?><!DOCTYPE html>
 <html>
 
 <head>
@@ -34,39 +44,26 @@
 
 <!-- ==================== MAIN CONTENT ==================== -->
 
-<div class="container meeting-agenda page-padding"> 
-
-<h1>General Monthly Meeting</h1>
-
-<h2>Wednesday at 12:00PM-1:00PM</h2>
-
-<br>
-<h1>SBEA Monthly Meeting </h1>
-
-<h2>Time and Date: Wednesday Febuary 13 at 12:00PM</h2>
-
-
-
-<p>This will be our first meeting for the spring semester . We welcome everyone to attend. We will be discussing future plans and meeting the board of directors.
-</p>
-
-
-
-<br><br>
-<h1>SBEA Monthly Meeting </h1>
-
-
-<h2>Time and Date: Wednesday March 13 at 12:00PM</h2>
-
-
-
- <p>This will be our second meeting for the spring semester. We will discuss this semester activities and future projects.we will introduce officers to new members and discuss networking opportunities. We welcome everyone to attend. 
-</p>
-
-
-
-
-
+<div class="container meeting-agenda page-padding">
+	<div class="row">
+		<?php foreach ($db->query($get_meetings) as $row){ ?>
+		<div class="col-12">
+			<?php if (!empty($row['image'])){ ?>
+			<img src="img/events/<?php echo $row['image']; ?>" alt="<?php $row['title']; ?> Image" class="img-thumbnail img-responsive" />
+			<?php } else { ?>
+			<img src="img/events/header.jpg" alt="<?php $row['title']; ?> Image" class="img-thumbnail img-responsive" />
+			<?php } ?>
+			<h1><?php echo $row['title']; ?></h1>
+			<h2><?php echo Date('M d, Y', strtotime($row['date'])); ?> From <small><?php echo $row['time']; ?></small></h2>
+			<p class="lead"><?php echo $row['description']; ?></p>
+		</div>
+		<?php } ?>
+		<?php if (count($db->query($get_meetings)) <= 0){ ?>
+		<div class="col-12">
+			<h1 class="display-1">No upcoming meetings, please come back later</h1>
+		</div>
+		<?php } ?>
+	</div>
 </div>
 <!-- ===== MAIN CONTENT ===== -->
 

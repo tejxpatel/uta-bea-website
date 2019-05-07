@@ -2,7 +2,7 @@
 //require_once 'mod/core/req_auth.php';
 ?>
 <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-primary shadow-none">
-	<a class="navbar-brand pl-2 ml-0" href="login.php" id="BEA"><img style="max-width: 75px;" src="img/bea/BEA-Logo-white.png" alt="BEA LOGO"></a>
+	<a class="navbar-brand pl-2 ml-0" href="index.php" id="BEA"><img style="max-width: 75px;" src="img/bea/BEA-Logo-white.png" alt="BEA LOGO"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
