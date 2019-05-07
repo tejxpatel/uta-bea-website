@@ -134,7 +134,7 @@
             <p class="lead">BEA will often bring in many guest speakers to provide the members with real world expericence from different professionals at different levels of the broadcasting business.</p>
           </div>
           <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/Dale Hansen with Victor.jpg" alt="Dale Hansen with Victor">
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/Dale_Hansen_with_Victor.jpg" alt="Dale Hansen with Victor">
           </div>
         </div>
 
