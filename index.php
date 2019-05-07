@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <?php require_once "php-include/head.php"; ?>
-<title>BEA UTA Home</title>
+<title>BEA UTA Homepage</title>
 
 <?php require_once "css/css.php";?>
 
