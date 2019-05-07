@@ -111,7 +111,7 @@ require_once "css/css.php";
             <p class="lead">BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals.The UTA Chapter of BEA offers students pursuing a career in broadcasting many different oppurtunites to advance in their field. </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="img/home/1st Meeting Ever 2016.png" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="img/home/IMG_3374.JPG" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -123,7 +123,7 @@ require_once "css/css.php";
             <p class="lead">BEA offers many networking oppurtunities within the UTA chapter including the annual CMA conference that the chapter attends every year. </p>
           </div>
           <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" src="img/home/CMA conference 2.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="img/home/IMG_2947.JPG" alt="Generic placeholder image">
           </div>
         </div>
 
