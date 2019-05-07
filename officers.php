@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+<?php
+session_start();
+require_once 'mod/core/connect-to-db.php';
+
+$get_staff_pres = "SELECT user_id, first_name, last_name, title, image FROM ondzeuta_bea.user WHERE (title LIKE '%President%' || title LIKE '%Advisor%') AND deleted IS NULL;";
+$get_offiers = "SELECT user_id, first_name, last_name, title, image FROM ondzeuta_bea.user WHERE (title NOT LIKE '%President%' AND title NOT LIKE '%Advisor%') AND deleted IS NULL;";
+
+$db = pdoConnect();
+
+?><!DOCTYPE html>
 <html>
-
-
-
-<!-- ==================== HEAD ==================== -->
 <head>
 
 <meta charset="utf-8">
+<?php require_once "php-include/head.php"; ?>
 <title>Officers</title>
 
-<?php require_once "php-include/head.php"; ?>
+
 
 </head>
 
@@ -32,10 +38,10 @@
 <!-- ==================== HERO HEADER ==================== -->
 
 
-<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-
-<h1 class="parallax-text officer-hero-header">Our Officers</h1>
-
+<div class="jumbotron jumbotron-fluid officers-jumbotron">
+  <div class="container">
+    <h1 class="jumbotron-text">OFFICERS</h1>
+  </div>
 </div>
 
 
@@ -44,110 +50,63 @@
 <!-- ====================================================== -->
 
 
-<div class="container page-padding">
+<div class="container">
 
 
-<h1> Staff & President</h1>
-<br><br><br><br>
-<div class="container-fluid">
+<h1 class="py-3"> Staff & President</h1>
+<div class="container-fluid mb-5">
   <div class="row">
     <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
+    <?php foreach ($db->query($get_staff_pres) as $row) { ?>
+    <div class="col-12 col-md-6 col-xl-3  mb-3">
+      <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+        <?php if (!empty($row['image'])){ ?>
+        <img src="img/user/<?php echo $row['image']; ?>" class="card-img-top" alt="...">
+        <?php } else { ?>
+        <img src="img/user/user.jpg" class="card-img-top" alt="...">
+        <?php } ?>
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">LaDonna Aiken</h5>
-          <div class="card-text text-black-50">Staff</div>
+          <h5 class="card-title mb-0"><?php echo $row['first_name'],' ',$row['last_name']; ?></h5>
+          <div class="card-text text-black-50"><?php echo $row['title']; ?></div>
         </div>
       </div>
     </div>
-    <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Creighton Branch
-</h5>
-          <div class="card-text text-black-50">President</div>
-        </div>
-      </div>
-    </div>
-
-
-
-
+    <?php } ?>
   </div>
   <!-- /.row -->
 
-</div>
+</div> 
 <!-- /.container -->
 
-
-<br><br><br><br><br><br>
-
-
-
-
-<h1> STUDENT OFFICERS</h1>
+<h1 class="py-3"> Student Officers</h1>
 
 <!-- Page Content -->
-<div class="container-fluid">
+<div class="container py-5">
   <div class="row">
     <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
+    <?php foreach ($db->query($get_offiers) as $row) { ?>
+    <div class="col-12 col-md-6 col-xl-3  mb-3">
+      <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+        <?php if (!empty($row['image'])){ ?>
+        <img src="img/user/<?php echo $row['image']; ?>" class="card-img-top" alt="...">
+        <?php } else { ?>
+        <img src="img/user/user.jpg" class="card-img-top" alt="...">
+        <?php } ?>
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Edward  Cardenas</h5>
-          <div class="card-text text-black-50">Vice President</div>
+          <h5 class="card-title mb-0"><?php echo $row['first_name'],' ',$row['last_name']; ?></h5>
+          <div class="card-text text-black-50"><?php echo $row['title']; ?></div>
         </div>
       </div>
     </div>
-    <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Kimmie Darling</h5>
-          <div class="card-text text-black-50">Secretary</div>
-        </div>
-      </div>
-    </div>
-   
-    <!-- Team Member 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Joe Scanlan</h5>
-          <div class="card-text text-black-50">Treasurer</div>
-        </div>
-      </div>
-    </div>
-
-
-
+    <?php } ?>
   </div>
   <!-- /.row -->
 
 </div>
 <!-- /.container -->
-
  </div>
-
-
-<!-- =========== PARALLAX SECTION =============== -->
-
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
-
-
-
 
 <!-- ==================== FOOTER ==================== -->
 
@@ -157,9 +116,6 @@ require_once "php-include/footer.php";
 require_once "js/js.php";
 
  ?>
-
-
-
 
 
 </body>
