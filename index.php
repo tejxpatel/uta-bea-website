@@ -106,7 +106,9 @@
             <p class="lead">BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals.The UTA Chapter of BEA offers students pursuing a career in broadcasting many different oppurtunites to advance in their field. </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto rounded" src="img/home/1st-meeting-ever.png" alt="1st Meeting Ever">
+
+            <img class="featurette-image img-fluid mx-auto rounded" src="img/home/IMG_3374.JPG" alt="updated group photo">
+
           </div>
         </div>
 
@@ -118,7 +120,9 @@
             <p class="lead">BEA offers many networking oppurtunities within the UTA chapter including the annual CMA conference that the chapter attends every year. </p>
           </div>
           <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/cma-conference.jpg" alt="CMA Conference 2">
+
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/IMG_2947.JPG" alt="updated conference photo">
+
           </div>
         </div>
 
@@ -130,7 +134,7 @@
             <p class="lead">BEA will often bring in many guest speakers to provide the members with real world expericence from different professionals at different levels of the broadcasting business.</p>
           </div>
           <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/dale-hansen.jpg" alt="Dale Hansen with Victor">
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/Dale_Hansen_with_Victor.jpg" alt="Dale Hansen with Victor">
           </div>
         </div>
 
