@@ -17,32 +17,25 @@ font-family: 'Open Sans', sans-serif; */
 /* =============== OVERRIDE BOOTSTRAP STYLE =============== */
 
 
- .bg-dark {
+ .bg-dark-nav {
   background-color: #0064b1 !important;
 }
 
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 1);
+  background-color: #0064b1 !important;
 }
 
 .nav-link:hover {
 color: white !important;
+background-color: #f58025 !important;
 }
 
 .nav-item:hover {
-background-color: #f58025 !important;
-box-shadow: 0 4px 2px -2px black !important;
+box-shadow: 0 4px 2px -2px #f58025 !important;
 }
 
-
-.navbar-light .navbar-text a {
-color: rgba(0, 0, 0, 1);
-}
-
-.navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-color: rgba(0, 0, 0, 1);
-}
 
 
 .jumbotron {
@@ -110,6 +103,9 @@ footer {
 }
 
 
+
+
+
 /* ########## ALL PAGES ########## */
 
 .page-padding {
@@ -142,22 +138,22 @@ footer {
 
 
 .home-jumbotron {
-  background-image: url("/img/home/header.jpg");
+  background-image: url("../../img/home/header.jpg");
   
 }
 
 .events-jumbotron {
-  background-image: url("/img/events/header.jpg");
+  background-image: url("../../img/events/header.jpg");
   
 }
 
 .officers-jumbotron {
-  background-image: url("/img/officers/header.jpg");
+  background-image: url("../../img/officers/header.jpeg");
   
 }
 
 .meetings-jumbotron {
-  background-image: url("/img/meetings/header.jpg");
+  background-image: url("../../img/meetings/header.jpg");
   
 }
 

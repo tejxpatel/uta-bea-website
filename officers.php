@@ -12,9 +12,10 @@ $db = pdoConnect();
 <head>
 
 <meta charset="utf-8">
+<?php require_once "php-include/head.php"; ?>
 <title>Officers</title>
 
-<?php require_once "php-include/head.php"; ?>
+
 
 </head>
 
@@ -37,10 +38,10 @@ $db = pdoConnect();
 <!-- ==================== HERO HEADER ==================== -->
 
 
-<div class="parallax-container home-hero" data-parallax="scroll" data-bleed="10" data-image-src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-
-<h1 class="parallax-text officer-hero-header">Our Officers</h1>
-
+<div class="jumbotron jumbotron-fluid officers-jumbotron">
+  <div class="container">
+    <h1 class="jumbotron-text">OFFICERS</h1>
+  </div>
 </div>
 
 
@@ -49,11 +50,10 @@ $db = pdoConnect();
 <!-- ====================================================== -->
 
 
-<div class="container page-padding">
+<div class="container">
 
 
-<h1> Staff & President</h1>
-<br><br><br><br>
+<h1 class="py-3"> Staff & President</h1>
 <div class="container-fluid mb-5">
   <div class="row">
     <!-- Team Member 1 -->
@@ -76,13 +76,13 @@ $db = pdoConnect();
   </div>
   <!-- /.row -->
 
-</div>
+</div> 
 <!-- /.container -->
 
-<h1> STUDENT OFFICERS</h1>
+<h1 class="py-3"> Student Officers</h1>
 
 <!-- Page Content -->
-<div class="container-fluid">
+<div class="container py-5">
   <div class="row">
     <!-- Team Member 1 -->
     <?php foreach ($db->query($get_offiers) as $row) { ?>
@@ -107,11 +107,6 @@ $db = pdoConnect();
 </div>
 <!-- /.container -->
  </div>
-
-<!-- =========== PARALLAX SECTION =============== -->
-
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
 
 
 <!-- ==================== FOOTER ==================== -->

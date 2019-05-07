@@ -1,7 +1,7 @@
 <!-- ====================  HEADER  ==================== -->
 
 
-  <div class="img-fluid text-center" style="background-color: white;"><a href="index.php"><img src="img/bea/bea-header-logo.jpg" width="25%" /></a></div>
+  <div class="img-fluid text-center py-1" style="background-color: white;"><a href="index.php"><img src="img/bea/bea-header-logo.jpg" width="25%" /></a></div>
 
 
 
@@ -9,7 +9,7 @@
 <!-- ====================  NAVIGATION  ==================== -->
 <!-- <div class="container-fluid"> -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-nav py-1">
  <!-- <a  style="font-size: 2em;" class="navbar-brand" href="#">BEA</a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false">
     <span class="navbar-toggler-icon"></span>
