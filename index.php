@@ -41,32 +41,29 @@ require_once "css/css.php";
 
 
 <!-- =========== WHO WE ARE SECTION =============== -->
-<div class="page-padding">
-<h1 class="center-text">WHO ARE WE</h1>
 
-<br>
-
+<h1 class="center-text py-5">About Us</h1>
 
 <div class="container center-text who-we-are">
 
   <div class="row center-text">
 
   
-    <div class="col-sm center-text">
+    <div class="col-xs-12 col-sm-4 col-md-4  center-text">
     <i class="fas fa-flag"></i>
 
-      <h3>Mission</h3>
+      <h3>Our Mission</h3>
       <p>
 
       The UTA Chapter of the Broadcast Education Association goal is to provide UTA students that are majoring in broadcasting with information on industry knowledge, intern opportunities, events, and social networking.
 
       </p>
     </div>
-    <div class="col-sm center-text">
+    <div class="col-xs-12 col-sm-4 col-md-4 center-text">
 
    <i class="fas fa-video"></i> 
 
-    <h3>Members</h3>
+    <h3>Our Members</h3>
 
     <p>
     We offer excellent leadership and  wonderful opportunities for students interested in a career in broadcasting. 
@@ -76,7 +73,7 @@ require_once "css/css.php";
 
 </p>
     </div>
-    <div class="col-sm center-text">
+    <div class="col-xs-12 col-sm-4 col-md-4 center-text">
     <i class="fas fa-users"></i>
 
     <h3>Get Involved</h3>
@@ -92,7 +89,7 @@ require_once "css/css.php";
   </div>
 </div>
 
-</div>
+
 
 
 
@@ -101,7 +98,7 @@ require_once "css/css.php";
 
 <div class="container"> 
 
-        <!-- START THE FEATURETTES -->
+      
 
         <hr class="featurette-divider">
 
@@ -111,7 +108,7 @@ require_once "css/css.php";
             <p class="lead">BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals.The UTA Chapter of BEA offers students pursuing a career in broadcasting many different oppurtunites to advance in their field. </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="img/home/1st Meeting Ever 2016.png" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto rounded" src="img/home/1st-meeting-ever.png" alt="1st Meeting Ever">
           </div>
         </div>
 
@@ -123,7 +120,7 @@ require_once "css/css.php";
             <p class="lead">BEA offers many networking oppurtunities within the UTA chapter including the annual CMA conference that the chapter attends every year. </p>
           </div>
           <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" src="img/home/CMA conference 2.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/cma-conference.jpg" alt="CMA Conference 2">
           </div>
         </div>
 
@@ -135,13 +132,13 @@ require_once "css/css.php";
             <p class="lead">BEA will often bring in many guest speakers to provide the members with real world expericence from different professionals at different levels of the broadcasting business.</p>
           </div>
           <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="img/home/Dale Hansen with Victor.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto rounded" src="img/home/dale-hansen.jpg" alt="Dale Hansen with Victor">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <!-- /END THE FEATURETTES -->
+       
 
 
 
