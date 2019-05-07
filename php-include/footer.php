@@ -23,7 +23,11 @@
         <div class="col-xs-12 col-sm-3 col-md-3 admin-footer">
           <h5>Admin</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-white" href="login.php">Login</a></li>
+            <?php if ($_SESSION['auth']) { ?>
+              <li><a class="text-white" href="admin.php?logout=1">Logout</a></li>
+            <?php } else { ?>
+              <li><a class="text-white" href="login.php">Login</a></li>
+            <?php } ?>
           </ul>
         </div>
       </div>
