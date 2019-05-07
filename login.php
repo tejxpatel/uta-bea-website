@@ -23,7 +23,7 @@ $_SESSION['return_url'] = filter_var($_GET['r'], FILTER_SANITIZE_STRING);
 $bg = array('0C0CF6', '8A8A8A', '3C5ECC', 'E7363E', '682781', '00C937', 'FB7E00', '222222');
 $bg = $bg[array_rand($bg)];
 
-$logo = 'img/team/team-logo/color-png.png';
+$logo = 'img/bea/bea-header-logo.jpg';
 
 $error_list = array(
 	 'invalid' => array(
@@ -102,7 +102,7 @@ $error_list = array(
 		}
 	?>
 	<div class="text-center">
-		<a href="/"><img src="<?php echo $logo; ?>" alt="BEA LOGO" width="99" height="80"></a>
+		<a href="/"><img src="<?php echo $logo; ?>" alt="BEA LOGO" width="150" height="66"></a>
 	</div>
 	<form role="form" action="mod/core/auth.php" class="form auth_form" method="post" >
 		<div class="form-group">

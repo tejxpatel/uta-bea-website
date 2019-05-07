@@ -106,7 +106,9 @@
             <p class="lead">BEA is the premiere international academic media organization, driving insights, excellence in media production, and career advancement for educators, students, and professionals.The UTA Chapter of BEA offers students pursuing a career in broadcasting many different oppurtunites to advance in their field. </p>
           </div>
           <div class="col-md-5">
+
             <img class="featurette-image img-fluid mx-auto rounded" src="img/home/IMG_3374.JPG" alt="updated group photo">
+
           </div>
         </div>
 
@@ -118,7 +120,9 @@
             <p class="lead">BEA offers many networking oppurtunities within the UTA chapter including the annual CMA conference that the chapter attends every year. </p>
           </div>
           <div class="col-md-5 order-md-1">
+
           <img class="featurette-image img-fluid mx-auto rounded" src="img/home/IMG_2947.JPG" alt="updated conference photo">
+
           </div>
         </div>
 

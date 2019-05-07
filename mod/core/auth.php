@@ -16,10 +16,11 @@ if (!empty($_POST['login_name']) && !empty($_POST['password']) && !empty($_POST[
 		$login_name = filter_var($_POST['login_name'], FILTER_SANITIZE_STRING);
 		$password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
 
+
 		$get_user_password = "SELECT password, user_id FROM ondzeuta_bea.user WHERE (email = '" . $login_name . "' || user_name = '" . $login_name . "') AND deleted IS NULL LIMIT 1;";
 		$db = pdoConnect();
 		
-		$db->query($get_user_password);
+		//$db->query($get_user_password);
 
 		foreach ($db->query($get_user_password) as $row) {
 			$uid = $row['user_id'];
@@ -44,8 +45,7 @@ if (!empty($_POST['login_name']) && !empty($_POST['password']) && !empty($_POST[
 					$_SESSION['title'] = $row['title'];
 			}
 		}
-
-		if (isset($_SESSION['user_id']) && !empty($_SESSION['group_id']) && !empty($_SESSION['user_name']) && !empty($_SESSION['email']) && !empty($_SESSION['first_name']) && !empty($_SESSION['last_name']) && empty($_SESSION['end_date'])) {
+		if (isset($_SESSION['user_id']) && !empty($_SESSION['group_id']) && !empty($_SESSION['user_name']) && !empty($_SESSION['email']) && !empty($_SESSION['first_name']) && !empty($_SESSION['last_name'])) {
 			// Set auth
 			$_SESSION['auth'] = 1;
 
@@ -72,5 +72,4 @@ if (!empty($_POST['login_name']) && !empty($_POST['password']) && !empty($_POST[
 	exit;
 }
 
-# ssh -i "/Users/mbs/Dropbox/Documents/Career/5/keychain/5pitcrew.pem" ubuntu@ec2-54-175-205-70.compute-1.amazonaws.com
 ?>
