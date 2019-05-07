@@ -19,10 +19,10 @@
 				<div class="dropdown-menu dropdown-menu-right text-primary">
 					<span class="dropdown-item-text"><small>Signed in as</small></span>
 					<span class="dropdown-item-text text-nowrap"><strong><?php echo $_SESSION['first_name'],' ',$_SESSION['last_name']; ?></strong></span>
-					<?php if ($_SESSION['group_id'] <= 3) { // referral partner and up?>
+					<!-- <?php if ($_SESSION['group_id'] <= 3) { // referral partner and up?>
 						<div class="dropdown-divider"></div>
 						<a href="../5/directory.php" class="dropdown-item">Change Password</a>
-					<?php } ?>
+					<?php } ?> -->
 					<div class="dropdown-divider"></div>
 					<!--<a href="../user/settings.php" class="dropdown-item">Settings</a>-->
 					<a href="?logout=1" class="dropdown-item">Logout</a>

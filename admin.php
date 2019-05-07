@@ -3,8 +3,12 @@ require_once 'mod/core/req_auth.php';
 
 $db = pdoConnect();
 
-$get_officers = 'SELECT user_id, first_name, last_name, bio, title, major, user_name, email, image FROM ondzeuta_bea.user WHERE deleted IS NULL';
-$get_events = 'SELECT event_id, name, date, time, location, type, description, created_by, image FROM ondzeuta_bea.event WHERE deleted IS NULL';
+if ($_SESSION['group_id'] >= 1) {
+  $s = "AND title NOT LIKE '%admin%'";
+}
+
+$get_officers = "SELECT user_id, first_name, last_name, bio, title, major, user_name, email, image FROM ondzeuta_bea.user WHERE deleted IS NULL $s;";
+$get_events = "SELECT event_id, name, date, time, location, type, description, created_by, image FROM ondzeuta_bea.event WHERE deleted IS NULL;";
 //var_dump($_SESSION);
 //$animate_css = 1;
 
@@ -242,7 +246,7 @@ $get_events = 'SELECT event_id, name, date, time, location, type, description, c
                     <p class="card-text"><?php echo Date('m/d/Y', strtotime($row['date'])); ?> <small><?php echo $row['time']; ?></small></p>
                     <?php if ($_SESSION['group_id'] <= 1 || $_SESSION['user_id'] == $row['created_by']) { ?>
                     <a href="#" class="btn btn-warning edit-event" data-event='<?php echo json_encode($row); ?>'>Edit</a>
-                    <a href="mod/event/delete.php?id=<?php echo $row['user_id']; ?>" class="btn btn-danger delete-event">Delete</a>
+                    <a href="mod/event/delete.php?id=<?php echo $row['event_id']; ?>" class="btn btn-danger delete-event">Delete</a>
                     <?php } ?>
                   </div>
                 </div>

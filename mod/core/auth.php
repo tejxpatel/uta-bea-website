@@ -45,7 +45,7 @@ if (!empty($_POST['login_name']) && !empty($_POST['password']) && !empty($_POST[
 					$_SESSION['title'] = $row['title'];
 			}
 		}
-		if (isset($_SESSION['user_id']) && !empty($_SESSION['group_id']) && !empty($_SESSION['user_name']) && !empty($_SESSION['email']) && !empty($_SESSION['first_name']) && !empty($_SESSION['last_name'])) {
+		if (isset($_SESSION['user_id']) && (!empty($_SESSION['group_id']) || $_SESSION['group_id'] == 0) && !empty($_SESSION['user_name']) && !empty($_SESSION['email']) && !empty($_SESSION['first_name']) && !empty($_SESSION['last_name'])) {
 			// Set auth
 			$_SESSION['auth'] = 1;
 
