@@ -4,12 +4,10 @@
 <head>
 
 <meta charset="utf-8">
+<?php require_once "php-include/head.php"; ?>
 <title>BEA UTA Home</title>
 
-<?php 
-
-require_once "css/css.php";
-?>
+<?php require_once "css/css.php";?>
 
 </head>
 

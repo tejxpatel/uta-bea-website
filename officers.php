@@ -7,9 +7,10 @@
 <head>
 
 <meta charset="utf-8">
+<?php require_once "php-include/head.php"; ?>
 <title>Officers</title>
 
-<?php require_once "php-include/head.php"; ?>
+
 
 </head>
 
