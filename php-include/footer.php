@@ -18,6 +18,7 @@
           <ul class="list-unstyled text-small">
             <li><a class="text-white" href="https://www.facebook.com/mavsbea/" target="_blank">Facebook</a></li>
             <li><a class="text-white" href="https://twitter.com/MavsSbea" target="_blank">Twitter</a></li>
+            <li><a class="text-white" href="https://instagram.com/beautachapter" target="_blank">Instagram</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3 admin-footer">

@@ -2,8 +2,8 @@
 session_start();
 require_once 'mod/core/connect-to-db.php';
 
-$get_staff_pres = "SELECT user_id, first_name, last_name, title, image FROM ondzeuta_bea.user WHERE (title LIKE '%President%' || title LIKE '%Advisor%') AND deleted IS NULL;";
-$get_offiers = "SELECT user_id, first_name, last_name, title, image FROM ondzeuta_bea.user WHERE (title NOT LIKE '%President%' AND title NOT LIKE '%Advisor%' AND title NOT LIKE '%Admin%') AND deleted IS NULL;";
+$get_staff_pres = "SELECT user_id, first_name, last_name, title, image FROM ondzeuta_bea.user WHERE (title = 'President' || title = 'Advisor') AND deleted IS NULL;";
+$get_offiers = "SELECT user_id, first_name, last_name, title, image FROM ondzeuta_bea.user WHERE (title != 'President' AND title != 'Advisor' AND title != 'Admin') AND deleted IS NULL;";
 
 $db = pdoConnect();
 

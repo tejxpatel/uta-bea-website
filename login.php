@@ -102,7 +102,7 @@ $error_list = array(
 		}
 	?>
 	<div class="text-center">
-		<a href="/"><img src="<?php echo $logo; ?>" alt="BEA LOGO" width="150" height="66"></a>
+		<a href="index.php"><img src="<?php echo $logo; ?>" alt="BEA LOGO" width="150" height="66"></a>
 	</div>
 	<form role="form" action="mod/core/auth.php" class="form auth_form" method="post" >
 		<div class="form-group">
