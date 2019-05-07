@@ -44,15 +44,15 @@
 <!-- ====================================================== -->
 
 
-<div class="container page-padding">
+<div class="container">
 
 
-<h1> Staff & President</h1>
-<br><br><br><br>
-<div class="container-fluid">
+<h1 class="text-center col-12 py-5"> Staff & President</h1>
+
+<div class="container py-5">
   <div class="row">
     <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
         <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
@@ -63,7 +63,7 @@
       </div>
     </div>
     <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
         <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
@@ -81,22 +81,17 @@
   </div>
   <!-- /.row -->
 
-</div>
+</div> 
 <!-- /.container -->
 
 
-<br><br><br><br><br><br>
-
-
-
-
-<h1> STUDENT OFFICERS</h1>
+<h1 class="text-center col-12 py-5"> Student Officers</h1>
 
 <!-- Page Content -->
-<div class="container-fluid">
+<div class="container py-5">
   <div class="row">
     <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
         <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
@@ -107,7 +102,7 @@
       </div>
     </div>
     <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
         <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
@@ -116,10 +111,10 @@
           <div class="card-text text-black-50">Secretary</div>
         </div>
       </div>
-    </div>
+    </div> 
    
     <!-- Team Member 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
         <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
@@ -139,13 +134,6 @@
 <!-- /.container -->
 
  </div>
-
-
-<!-- =========== PARALLAX SECTION =============== -->
-
-
-<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/temp.jpg"></div>
-
 
 
 

@@ -36,11 +36,6 @@
 
 <div class="container meeting-agenda page-padding"> 
 
-<h1>General Monthly Meeting</h1>
-
-<h2>Wednesday at 12:00PM-1:00PM</h2>
-
-<br>
 <h1>SBEA Monthly Meeting </h1>
 
 <h2>Time and Date: Wednesday Febuary 13 at 12:00PM</h2>
@@ -52,7 +47,7 @@
 
 
 
-<br><br>
+<br>
 <h1>SBEA Monthly Meeting </h1>
 
 
