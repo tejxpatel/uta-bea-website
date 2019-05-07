@@ -53,12 +53,12 @@ $db = pdoConnect();
 <div class="container">
 
 
-<h1 class="py-3"> Staff & President</h1>
-<div class="container-fluid mb-5">
+<h1 class="text-center col-12 py-5"> Staff & President</h1>
+<div class="container py-5">
   <div class="row">
     <!-- Team Member 1 -->
     <?php foreach ($db->query($get_staff_pres) as $row) { ?>
-    <div class="col-12 col-md-6 col-xl-3  mb-3">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
       <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <?php if (!empty($row['image'])){ ?>
@@ -79,14 +79,14 @@ $db = pdoConnect();
 </div> 
 <!-- /.container -->
 
-<h1 class="py-3"> Student Officers</h1>
+<h1 class="text-center col-12 py-5"> Student Officers</h1>
 
 <!-- Page Content -->
 <div class="container py-5">
   <div class="row">
     <!-- Team Member 1 -->
     <?php foreach ($db->query($get_offiers) as $row) { ?>
-    <div class="col-12 col-md-6 col-xl-3  mb-3">
+    <div class="col-xs-12 col-sm-3 col-md-3 py-3 mx-auto">
       <div class="card-header bg-primary text-center text-warning"><h4></h4></div>
       <div class="card border-0 shadow">
         <?php if (!empty($row['image'])){ ?>
