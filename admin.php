@@ -192,9 +192,9 @@ $get_events = 'SELECT event_id, name, date, time, location, type, description, c
 				  		<div class="col-xs-12 col-sm-4 col-md-3 mb-3">
                 <div class="card">
                   <?php if (!empty($row['image'])){ ?>
-                  <img class="card-img-top" src="./img/user/<?php echo $row['image']; ?>" alt="Card image cap" />
+                  <img class="card-img-top" src="./img/user/<?php echo $row['image']; ?>" width="420" alt="<?php echo $row['first_name'], ' ', $row['last_name']; ?> Image" />
                   <?php } else { ?>
-                  <img class="card-img-top" src="./img/user/user.jpg" alt="Card image cap" />
+                  <img class="card-img-top" width="420" src="./img/user/user.jpg" alt="Card image cap" />
                   <?php } ?>
                   <div class="card-body">
                     <h5 class="card-title"><?php echo $row['first_name'],' ',$row['last_name'] ?></h5>
